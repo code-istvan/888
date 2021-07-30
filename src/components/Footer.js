@@ -29,12 +29,12 @@ const Footer = () => {
     <Container fluid>
       <Row>
         <Col className="backgroundColorTop">
-          <h5>
+          <p>
             “A test nehézkes, az elme vibráló, a lélek sugárzó. A jóga
             gyakorlása kibontakoztatja a testben rejlő lehetőséget és a vibráló
             elme szintjére emelik, hogy mindkettő - a vibrálóvá vált test és
             elme - a lélek fénye felé fordulhasson.”
-          </h5>
+          </p>
           <br />
         </Col>
       </Row>

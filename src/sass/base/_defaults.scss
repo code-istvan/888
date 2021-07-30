@@ -1,0 +1,33 @@
+$gray: #a5a0a0;
+
+// $colors: (
+//   black: (
+//     base: black,
+//   ),
+//   white: (
+//     base: white,
+//   ),
+//   grey: (
+//     base: #4f4c52,
+//     900: #232226,
+//     800: #2f2d32,
+//     700: #3b383f,
+//     600: #4f4c52,
+//     500: #626065,
+//     400: #89888c,
+//     300: #9d9c9f,
+//     200: #c4c3c5,
+//     100: #d8d7d9,
+//     50: #ebebec,
+//     25: #f1f1f1,
+//   ),
+// );
+
+// @function color($color, $tone: "base") {
+//   @return map-get(map_get($colors, $color), $tone);
+// }
+
+// body {
+//   //background: color(grey, 900);
+//   //background: rgba(color(grey, 900), 0.5);
+// }

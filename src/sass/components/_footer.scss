@@ -1,9 +1,11 @@
+@import "../base/_defaults";
+
 .backgroundColorTop {
   background-color: #bdbdbd;
   border-top: 2px solid rgba(16, 15, 15, 0.4);
 }
 
-.backgroundColorTop h5 {
+.backgroundColorTop p {
   text-align: center;
   margin-top: 15px;
 }
@@ -13,7 +15,7 @@
 }
 .backgroundColor2 {
   background-color: rgba(16, 15, 15, 0.81);
-  color: rgb(165, 160, 160);
+  color: $gray;
   text-align: center;
 }
 
