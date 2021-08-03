@@ -1,7 +1,9 @@
 import React, { useState } from "react"
+import "bootstrap/dist/css/bootstrap.min.css"
 import { Link } from "gatsby"
 import { Row, Col } from "react-bootstrap"
 import Container from "react-bootstrap/Container"
+import Button from "react-bootstrap/Button"
 import "../sass/components/_footer.scss"
 import telegram from "..//images/telegram.svg"
 import messenger from "..//images/messenger.svg"
@@ -109,26 +111,34 @@ const Footer = () => {
           >
             <input type="hidden" name="form-name" value="newsletter" />
 
-            <label htmlFor="name">Name</label>
-            <input
-              id="name"
-              type="text"
-              name="name"
-              onChange={handleChange}
-              value={formState.name}
-              placeholder="Enter your name"
-            />
+            {/* <label htmlFor="email"></label> */}
+            <div class="d-grid gap-2">
+              <input
+                id="email"
+                type="email"
+                name="email"
+                onChange={handleChange}
+                value={formState.email}
+                placeholder="E-mail címed"
+              />{" "}
+            </div>
+            {/* <label htmlFor="name"></label> */}
+            {/* <div class="d-grid gap-2">
+              <input
+                id="name"
+                type="text"
+                name="name"
+                onChange={handleChange}
+                value={formState.name}
+                placeholder="E-mail címed"
+              />
+            </div> */}
 
-            <label htmlFor="email">Email</label>
-            <input
-              id="email"
-              type="email"
-              name="email"
-              onChange={handleChange}
-              value={formState.email}
-              placeholder="Enter your email"
-            />
-            <button type="submit">Submit</button>
+            <div className="d-grid gap-2">
+              <Button className="btn btn-dark" type="submit">
+                Küldés
+              </Button>
+            </div>
           </form>
         </Col>
         <Col sm>
