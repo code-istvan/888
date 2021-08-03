@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link } from "gatsby"
 import { Row, Col } from "react-bootstrap"
 import Container from "react-bootstrap/Container"
@@ -25,10 +25,40 @@ const Footer = () => {
     }
   }
 
+  const [formState, setFormState] = useState({
+    name: "",
+    email: "",
+  })
+
+  const encode = data => {
+    return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&")
+  }
+
+  const handleChange = e => {
+    setFormState({
+      ...formState,
+      [e.target.name]: e.target.value,
+    })
+  }
+
+  const handleSubmit = e => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...formState }),
+    })
+      .then(() => alert("Success!"))
+      .catch(error => alert(error))
+
+    e.preventDefault()
+  }
+
   return (
     <Container fluid>
       <Row>
-        <Col className="backgroundColorTop">
+        <Col className="footer__backgroundcolor__top">
           <p>
             “A test nehézkes, az elme vibráló, a lélek sugárzó. A jóga
             gyakorlása kibontakoztatja a testben rejlő lehetőséget és a vibráló
@@ -38,7 +68,7 @@ const Footer = () => {
           <br />
         </Col>
       </Row>
-      <Row className="backgroundColor">
+      <Row className="footer__backgroundcolor__middle">
         {/* <Row xs={1} md={2} lg={3} className='backgroundColor'> */}
         <Col sm>
           <h6>LEGYÉL A BARÁTUNK</h6>
@@ -69,12 +99,42 @@ const Footer = () => {
         </Col>
         <Col sm>
           <h6>HÍRLEVÉL</h6>
-          <p>Ide jön majd a form</p>
+
+          <form
+            onSubmit={handleSubmit}
+            name="newsletter"
+            method="post"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+          >
+            <input type="hidden" name="form-name" value="newsletter" />
+
+            <label htmlFor="name">Name</label>
+            <input
+              id="name"
+              type="text"
+              name="name"
+              onChange={handleChange}
+              value={formState.name}
+              placeholder="Enter your name"
+            />
+
+            <label htmlFor="email">Email</label>
+            <input
+              id="email"
+              type="email"
+              name="email"
+              onChange={handleChange}
+              value={formState.name}
+              placeholder="Enter your email"
+            />
+            <button type="submit">Submit</button>
+          </form>
         </Col>
         <Col sm>
           <h6>ADATVÉDELEM</h6>
           <p>
-            <Link className="omworks" href="/adatvedelem">
+            <Link className="footer__link" href="/adatvedelem">
               Adatvédelmi tájékoztató
             </Link>
             <br />
@@ -83,11 +143,15 @@ const Footer = () => {
         </Col>
       </Row>
       <Row>
-        <Col className="backgroundColor2">
+        <Col className="footer__backgroundcolor__bottom">
           <p>
             Copyright© 2015-{new Date().getFullYear()} Nyolcágú Jóga Alapítvány
             | Designed by{" "}
-            <Link className="omworks" href="https://omworks.hu" target="_blank">
+            <Link
+              className="footer__link"
+              href="https://omworks.hu"
+              target="_blank"
+            >
               OM_Works_Yoga_Creatives
             </Link>
           </p>

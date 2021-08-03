@@ -1,25 +1,26 @@
 @import "../base/_defaults";
 
-.backgroundColorTop {
-  background-color: #bdbdbd;
-  border-top: 2px solid rgba(16, 15, 15, 0.4);
+.footer__backgroundcolor__top {
+  background-color: color(gray);
+  border-top: 2px solid color(black);
 }
 
-.backgroundColorTop p {
+.footer__backgroundcolor__top p {
   text-align: center;
   margin-top: 15px;
 }
 
-.backgroundColor {
-  background-color: #bdbdbd;
+.footer__backgroundcolor__middle {
+  background-color: color(gray);
 }
-.backgroundColor2 {
-  background-color: rgba(16, 15, 15, 0.81);
-  color: $gray;
+
+.footer__backgroundcolor__bottom {
+  background-color: color(black);
+  color: color(gray);
   text-align: center;
 }
 
-.backgroundColor2 p {
+.footer__backgroundcolor__bottom p {
   margin-top: 10px;
   text-decoration: none;
 }
@@ -31,41 +32,43 @@ input {
   font-family: monospace;
 }
 
-#emailstyle {
-  background-color: whitesmoke;
-  border-top: 3px solid #bdbdbd;
-  border-bottom: 3px solid #bdbdbd;
-  border-left: 3px solid #bdbdbd;
-  border-right: 3px solid #bdbdbd;
-  border-radius: 5px;
-  width: 80%;
-  margin-right: 3px;
-}
+// #emailstyle {
+//   background-color: color(white);
+//   border-top: 3px solid #bdbdbd;
+//   border-bottom: 3px solid #bdbdbd;
+//   border-left: 3px solid #bdbdbd;
+//   border-right: 3px solid #bdbdbd;
 
-#emailstyle[type="email"]:focus {
-  border: 4px solid #027bff;
-}
+//   border-radius: 5px;
+//   width: 80%;
+//   margin-right: 3px;
+// }
 
-#buttonstyle {
-  background-color: rgba(16, 15, 15, 0.81);
-  border: 3px solid #bdbdbd;
-  border-radius: 5px;
-  color: white;
-  width: 80%;
-}
+// #emailstyle[type="email"]:focus {
+//   border: 4px solid #027bff;
+// }
 
-.secondLine {
-  background-color: #bdbdbd;
-}
+// #buttonstyle {
+//   background-color: rgba(16, 15, 15, 0.81);
+//   border: 3px solid #bdbdbd;
+//   border-radius: 5px;
+//   color: white;
+//   width: 80%;
+// }
+
+// .secondLine {
+//   background-color: #bdbdbd;
+// }
 
 img {
   margin-right: 10px;
   margin-bottom: 10px;
 }
 
-.omworks {
+.footer__link {
   text-decoration: none !important;
 }
-.omworks:hover {
+
+.footer__link:hover {
   color: whitesmoke;
 }

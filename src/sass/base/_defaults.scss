@@ -1,31 +1,30 @@
 $gray: #a5a0a0;
 
-// $colors: (
-//   black: (
-//     base: black,
-//   ),
-//   white: (
-//     base: white,
-//   ),
-//   grey: (
-//     base: #4f4c52,
-//     900: #232226,
-//     800: #2f2d32,
-//     700: #3b383f,
-//     600: #4f4c52,
-//     500: #626065,
-//     400: #89888c,
-//     300: #9d9c9f,
-//     200: #c4c3c5,
-//     100: #d8d7d9,
-//     50: #ebebec,
-//     25: #f1f1f1,
-//   ),
-// );
+$colors: (
+  black: (
+    base: rgba(16, 15, 15, 0.81),
+  ),
+  white: (
+    base: rgb(245, 245, 245),
+  ),
+  grey: (
+    base: rgb(189, 189, 189),
+    900: #232226,
+    800: #2f2d32,
+  ),
+  blue: (
+    base: rgb(0, 123, 255),
+    900: #232226,
+    800: #2f2d32,
+  ),
+  test: (
+    base: rgb(255, 25, 223),
+  ),
+);
 
-// @function color($color, $tone: "base") {
-//   @return map-get(map_get($colors, $color), $tone);
-// }
+@function color($color, $tone: "base") {
+  @return map-get(map_get($colors, $color), $tone);
+}
 
 // body {
 //   //background: color(grey, 900);
