@@ -47,7 +47,7 @@ const Footer = () => {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", ...formState }),
+      body: encode({ "form-name": "newsletter", ...formState }),
     })
       .then(() => alert("Success!"))
       .catch(error => alert(error))
