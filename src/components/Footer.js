@@ -125,7 +125,7 @@ const Footer = () => {
               type="email"
               name="email"
               onChange={handleChange}
-              value={formState.name}
+              value={formState.email}
               placeholder="Enter your email"
             />
             <button type="submit">Submit</button>
