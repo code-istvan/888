@@ -28,7 +28,7 @@ const Footer = () => {
   }
 
   const [formState, setFormState] = useState({
-    name: "",
+    // name: "",
     email: "",
   })
 
@@ -122,18 +122,6 @@ const Footer = () => {
                 placeholder="E-mail címed"
               />{" "}
             </div>
-            {/* <label htmlFor="name"></label> */}
-            {/* <div class="d-grid gap-2">
-              <input
-                id="name"
-                type="text"
-                name="name"
-                onChange={handleChange}
-                value={formState.name}
-                placeholder="E-mail címed"
-              />
-            </div> */}
-
             <div className="d-grid gap-2">
               <Button className="btn btn-dark" type="submit">
                 Küldés
