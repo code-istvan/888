@@ -6,6 +6,7 @@ import Container from "react-bootstrap/Container"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "../sass/components/_layout.scss"
 import Footer from "./Footer"
+import Mainimage from "../components/Image"
 
 const Layout = ({ children }) => {
   // const data = useStaticQuery(graphql`
@@ -21,6 +22,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Navbar8 />
+      <Mainimage />
       <Container>
         <main>{children}</main>
       </Container>

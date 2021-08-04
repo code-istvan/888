@@ -98,7 +98,6 @@ const Footer = () => {
             eventHandler={HoverEventsHandler}
           />
         </Col>
-
         <Col sm>
           <h6>HÍRLEVÉL</h6>
           <Button variant="dark">Feliratkozás</Button>
