@@ -12,11 +12,13 @@
 
 .btn {
   font-family: monospace;
+  border-radius: 0.5rem;
 }
 
 #BrandNameFont {
   font-family: monospace;
   font-size: 1.2em !important;
+  color: color(black);
 }
 
 .ml-auto a {
@@ -57,6 +59,17 @@
   }
 }
 
+@media screen and (max-width: 992px) {
+  .nav-item {
+    margin-bottom: 20px;
+  }
+  .navbar-nav {
+    margin-bottom: 15px;
+  }
+}
+
+// }
+
 #nyolcag {
   display: none;
 }
@@ -71,8 +84,9 @@
 }
 
 .navbar-toggler {
-  border: solid color(black) 2px;
-  border-color: #5d5d5f !important;
+  // border: solid color(black) 2px;
+  // border-color: #5d5d5f !important;
+  border: none;
 }
 
 /* .navcenter {

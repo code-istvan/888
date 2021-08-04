@@ -3,13 +3,7 @@ import "../sass/components/_animeLogo.scss"
 
 function AnimeLogo() {
   return (
-    <svg
-      width="75"
-      height="75"
-      viewBox="1 0 291 293"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
+    <svg viewBox="1 0 291 293" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g id="yantra" clipPath="url(#clip0)">
         <path
           id="Vector"

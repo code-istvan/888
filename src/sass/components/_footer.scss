@@ -32,6 +32,16 @@ input {
   font-family: monospace;
 }
 
+@media screen and (max-width: 610px) {
+  .col-sm {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .btn {
+    margin-bottom: 15px;
+  }
+}
+
 // #emailstyle {
 //   background-color: color(white);
 //   border-top: 3px solid #bdbdbd;

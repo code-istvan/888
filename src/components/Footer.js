@@ -28,7 +28,6 @@ const Footer = () => {
   }
 
   const [formState, setFormState] = useState({
-    // name: "",
     email: "",
   })
 
@@ -51,7 +50,7 @@ const Footer = () => {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "newsletter", ...formState }),
     })
-      .then(() => alert("Success!"))
+      .then(() => alert("Sikeresen feliratkoztál hírlevelünkre!"))
       .catch(error => alert(error))
 
     e.preventDefault()
@@ -99,10 +98,11 @@ const Footer = () => {
             eventHandler={HoverEventsHandler}
           />
         </Col>
+
         <Col sm>
           <h6>HÍRLEVÉL</h6>
-
-          <form
+          <Button variant="dark">Feliratkozás</Button>
+          {/* <form
             onSubmit={handleSubmit}
             name="newsletter"
             method="post"
@@ -111,7 +111,7 @@ const Footer = () => {
           >
             <input type="hidden" name="form-name" value="newsletter" />
 
-            {/* <label htmlFor="email"></label> */}
+        
             <div class="d-grid gap-2">
               <input
                 id="email"
@@ -120,6 +120,7 @@ const Footer = () => {
                 onChange={handleChange}
                 value={formState.email}
                 placeholder="E-mail címed"
+                required
               />{" "}
             </div>
             <div className="d-grid gap-2">
@@ -127,7 +128,7 @@ const Footer = () => {
                 Küldés
               </Button>
             </div>
-          </form>
+          </form> */}
         </Col>
         <Col sm>
           <h6>ADATVÉDELEM</h6>
