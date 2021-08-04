@@ -1,6 +1,6 @@
 import React from "react"
-import pic from "../../public/static/landing_img.jpg"
-import picSmall from "../../public/static/landing_img_small.jpg"
+import pic from "/static/landing_img.jpg"
+import picSmall from "/static/landing_img_small.jpg"
 import Image from "react-bootstrap/Image"
 
 const mainimage = () => {
