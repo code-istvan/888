@@ -7,7 +7,8 @@
 
 .navbar a:not(.btn) {
   font-family: monospace;
-  color: color(black) !important;
+  color: color(black, pure) !important;
+  // color: black !important;
 }
 
 .btn {
@@ -18,12 +19,12 @@
 #BrandNameFont {
   font-family: monospace;
   font-size: 1.2em !important;
-  color: color(black);
+  color: color(black, pure);
 }
 
 .ml-auto a {
   font-size: 1.1em !important;
-  color: color(black) !important;
+  color: color(black, pure) !important;
   font-family: monospace;
 }
 .navbar a:hover:not(.btn) {
@@ -65,6 +66,7 @@
   }
   .navbar-nav {
     margin-bottom: 15px;
+    font-size: 1.2em !important;
   }
 }
 
@@ -77,8 +79,8 @@
 @media screen and (max-width: 460px) {
   #nyolcag {
     display: inline;
-    font-size: 1.1em !important;
-    color: color(black) !important;
+    font-size: 1.3em !important;
+    color: color(black, pure) !important;
     font-family: monospace;
   }
 }
