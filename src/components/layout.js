@@ -9,6 +9,7 @@ import "../sass/components/_layout.scss"
 import Footer from "./Footer"
 import "../sass/components/_layout.scss"
 import Hero from "./Hero"
+import { Row } from "react-bootstrap"
 
 export default function Layout({ children }) {
   return (
