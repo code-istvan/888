@@ -27,34 +27,34 @@ const Footer = () => {
     }
   }
 
-  const [formState, setFormState] = useState({
-    email: "",
-  })
+  // const [formState, setFormState] = useState({
+  //   email: "",
+  // })
 
-  const encode = data => {
-    return Object.keys(data)
-      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-      .join("&")
-  }
+  // const encode = data => {
+  //   return Object.keys(data)
+  //     .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+  //     .join("&")
+  // }
 
-  const handleChange = e => {
-    setFormState({
-      ...formState,
-      [e.target.name]: e.target.value,
-    })
-  }
+  // const handleChange = e => {
+  //   setFormState({
+  //     ...formState,
+  //     [e.target.name]: e.target.value,
+  //   })
+  // }
 
-  const handleSubmit = e => {
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "newsletter", ...formState }),
-    })
-      .then(() => alert("Sikeresen feliratkoztál hírlevelünkre!"))
-      .catch(error => alert(error))
+  // const handleSubmit = e => {
+  //   fetch("/", {
+  //     method: "POST",
+  //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
+  //     body: encode({ "form-name": "newsletter", ...formState }),
+  //   })
+  //     .then(() => alert("Sikeresen feliratkoztál hírlevelünkre!"))
+  //     .catch(error => alert(error))
 
-    e.preventDefault()
-  }
+  //   e.preventDefault()
+  // }
 
   return (
     <Container fluid>
