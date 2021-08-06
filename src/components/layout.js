@@ -1,29 +1,21 @@
 import * as React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+// import PropTypes from "prop-types"
+// import { graphql } from "gatsby"
+// import Img from "gatsby-image"
 import Navbar8 from "./Navbar8"
 import Container from "react-bootstrap/Container"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "../sass/components/_layout.scss"
 import Footer from "./Footer"
-import Mainimage from "../components/Image"
+import "../sass/components/_layout.scss"
+import Hero from "./Hero"
 
-const Layout = ({ children }) => {
-  // const data = useStaticQuery(graphql`
-  //   query SiteTitleQuery {
-  //     site {
-  //       siteMetadata {
-  //         title
-  //       }
-  //     }
-  //   }
-  // `)
-
+export default function Layout({ children }) {
   return (
     <>
       <Navbar8 />
-      <Mainimage />
-      <Container>
+      <Hero />
+      <Container fluid>
         <main>{children}</main>
       </Container>
       <Footer />
@@ -31,8 +23,16 @@ const Layout = ({ children }) => {
   )
 }
 
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
-
-export default Layout
+// export const query = graphql`
+//   query {
+//     file(relativePath: { eq: "landing.jpg" }) {
+//       childImageSharp {
+//         fluid {
+//           src
+//           sizes
+//           srcSet
+//         }
+//       }
+//     }
+//   }
+// `
