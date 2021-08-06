@@ -92,6 +92,12 @@
   padding: 0 30px;
 }
 
+@media screen and (max-width: 768px) {
+  .navbarpad {
+    padding: 0 10px !important;
+  }
+}
+
 .navbar-nav a {
   margin-right: 15px;
   text-decoration: none;

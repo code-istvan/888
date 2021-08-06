@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import "bootstrap/dist/css/bootstrap.min.css"
 import { Link } from "gatsby"
+import { navigate } from "gatsby"
 import { Row, Col } from "react-bootstrap"
 import Container from "react-bootstrap/Container"
 import Button from "react-bootstrap/Button"
@@ -100,7 +101,14 @@ const Footer = () => {
         </Col>
         <Col sm>
           <h6>HÍRLEVÉL</h6>
-          <Button variant="dark">Feliratkozás</Button>
+          <Button
+            variant="dark"
+            onClick={() => {
+              navigate("/hirlevel")
+            }}
+          >
+            Feliratkozás
+          </Button>
           {/* <form
             onSubmit={handleSubmit}
             name="newsletter"
