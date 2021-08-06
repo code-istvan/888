@@ -1,7 +1,6 @@
 import React from "react"
 import "bootstrap/dist/css/bootstrap.min.css"
 import { Link } from "gatsby"
-// import PropTypes from "prop-types"
 import Container from "react-bootstrap/Container"
 import Navbar from "react-bootstrap/Navbar"
 import Nav from "react-bootstrap/Nav"
