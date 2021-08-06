@@ -15,7 +15,7 @@ export default function Layout({ children }) {
     <>
       <Navbar8 />
       <Hero />
-      <Container fluid>
+      <Container>
         <main>{children}</main>
       </Container>
       <Footer />

@@ -3,6 +3,7 @@
 .navbar-brand {
   display: flex;
   align-items: center;
+  margin-left: 1rem;
 }
 
 .navbar a:not(.btn) {
@@ -89,12 +90,14 @@
 }
 
 .navbarpad {
-  padding: 0 30px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 @media screen and (max-width: 768px) {
   .navbarpad {
-    padding: 0 10px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
   }
 }
 
