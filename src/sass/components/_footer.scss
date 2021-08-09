@@ -1,26 +1,30 @@
 @import "../base/_defaults";
 
-.footer__backgroundcolor__top {
+.footer__first_block {
   background-color: color(gray);
   border-top: 2px solid color(black);
-}
-
-.footer__backgroundcolor__top p {
+  margin-left: 10px;
+  margin-right: 10px;
   text-align: center;
   margin-top: 15px;
 }
 
-.footer__backgroundcolor__middle {
+.footer__first_block p {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.footer__second_block {
   background-color: color(gray);
 }
 
-.footer__backgroundcolor__bottom {
+.footer__third_block {
   background-color: color(black);
   color: color(gray);
   text-align: center;
 }
 
-.footer__backgroundcolor__bottom p {
+.footer__third_block p {
   margin-top: 10px;
   text-decoration: none;
 }
@@ -42,34 +46,6 @@ input {
   }
 }
 
-// #emailstyle {
-//   background-color: color(white);
-//   border-top: 3px solid #bdbdbd;
-//   border-bottom: 3px solid #bdbdbd;
-//   border-left: 3px solid #bdbdbd;
-//   border-right: 3px solid #bdbdbd;
-
-//   border-radius: 5px;
-//   width: 80%;
-//   margin-right: 3px;
-// }
-
-// #emailstyle[type="email"]:focus {
-//   border: 4px solid #027bff;
-// }
-
-// #buttonstyle {
-//   background-color: rgba(16, 15, 15, 0.81);
-//   border: 3px solid #bdbdbd;
-//   border-radius: 5px;
-//   color: white;
-//   width: 80%;
-// }
-
-// .secondLine {
-//   background-color: #bdbdbd;
-// }
-
 img {
   margin-right: 10px;
   margin-bottom: 10px;
@@ -83,11 +59,23 @@ img {
   color: whitesmoke;
 }
 
-// .footer__container__margin {
-//   // padding-left: 15px;
-// }
-
 .footer__button__newsletter {
   border: solid black;
   padding: 6px;
+}
+
+.col-sm {
+  margin-left: 40px;
+  text-align: center;
+}
+
+.footer_button {
+  background-color: color(black);
+  border-color: color(black);
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-radius: 20px;
+  color: whitesmoke;
 }

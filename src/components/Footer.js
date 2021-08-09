@@ -1,10 +1,11 @@
 import React, { useState } from "react"
 import "bootstrap/dist/css/bootstrap.min.css"
 import { Link } from "gatsby"
-import { navigate } from "gatsby"
+// import { navigate } from "gatsby"
 // import { navigate } from "gatsby"
 import { Row, Col } from "react-bootstrap"
 import Modal from "react-bootstrap/Modal"
+import ModalHeader from "react-bootstrap/ModalHeader"
 import Container from "react-bootstrap/Container"
 import Button from "react-bootstrap/Button"
 import "../sass/components/_footer.scss"
@@ -64,9 +65,9 @@ const Footer = () => {
   const handleShow = () => setShow(true)
 
   return (
-    <Container fluid className="footer__container__margin">
+    <Container fluid>
       <Row>
-        <Col className="footer__backgroundcolor__top">
+        <Col className="footer__first_block">
           <p>
             “A test nehézkes, az elme vibráló, a lélek sugárzó. A jóga
             gyakorlása kibontakoztatja a testben rejlő lehetőséget és a vibráló
@@ -76,7 +77,7 @@ const Footer = () => {
           <br />
         </Col>
       </Row>
-      <Row className="footer__backgroundcolor__middle">
+      <Row className="footer__second_block">
         {/* <Row xs={1} md={2} lg={3} className='backgroundColor'> */}
         <Col sm>
           <h6>LEGYÉL A BARÁTUNK</h6>
@@ -106,10 +107,10 @@ const Footer = () => {
           />
         </Col>
         <Col sm>
-          <h6>IRETKOZZ FEL HÍRLEVELÜNKRE</h6>
+          <h6>IRATKOZZ FEL HÍRLEVELÜNKRE</h6>
 
           <>
-            <Button variant="primary" onClick={handleShow}>
+            <Button className="footer_button" onClick={handleShow}>
               Feliratkozás
             </Button>
 
@@ -118,6 +119,14 @@ const Footer = () => {
                 <Modal.Title>Feliratkozás hírlevélre</Modal.Title>
               </Modal.Header>
               <Modal.Body>
+                <p>
+                  Iratkozz fel hírlevelünkre, hogy elsőként értesülj az
+                  alapítványt érintő történésekről. Havonta max. egy hírlevelet
+                  küldünk. Harmadik fél számára nem adjuk ki a feliratkozók
+                  e-mail címét.
+                </p>
+                <br />
+
                 <form
                   onSubmit={handleSubmit}
                   name="newsletter"
@@ -138,11 +147,19 @@ const Footer = () => {
                       required
                     />{" "}
                   </div>
+
                   <div className="d-grid gap-2">
                     <Button className="btn btn-dark" type="submit">
                       Küldés
                     </Button>
                   </div>
+                  <br />
+                  <label>
+                    <input type="checkbox" required /> Megismertem és elfogadom
+                    az
+                    <Link href="/adatvedelem"> Adatvédelmi tájékoztatót</Link>,
+                    hozzájárulok e-mail címem kezeléséhez.
+                  </label>
                 </form>
               </Modal.Body>
             </Modal>
@@ -160,7 +177,7 @@ const Footer = () => {
         </Col>
       </Row>
       <Row>
-        <Col className="footer__backgroundcolor__bottom">
+        <Col className="footer__third_block">
           <p>
             Copyright© 2015-{new Date().getFullYear()} Nyolcágú Jóga Alapítvány
             | Designed by{" "}
