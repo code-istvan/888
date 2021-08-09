@@ -2,7 +2,9 @@ import React, { useState } from "react"
 import "bootstrap/dist/css/bootstrap.min.css"
 import { Link } from "gatsby"
 import { navigate } from "gatsby"
+// import { navigate } from "gatsby"
 import { Row, Col } from "react-bootstrap"
+import Modal from "react-bootstrap/Modal"
 import Container from "react-bootstrap/Container"
 import Button from "react-bootstrap/Button"
 import "../sass/components/_footer.scss"
@@ -57,6 +59,10 @@ const Footer = () => {
     e.preventDefault()
   }
 
+  const [show, setShow] = useState(false)
+  const handleClose = () => setShow(false)
+  const handleShow = () => setShow(true)
+
   return (
     <Container fluid className="footer__container__margin">
       <Row>
@@ -100,42 +106,47 @@ const Footer = () => {
           />
         </Col>
         <Col sm>
-          <h6>HÍRLEVÉL</h6>
-          <Button
-            variant="dark"
-            onClick={() => {
-              navigate("/hirlevel")
-            }}
-          >
-            Feliratkozás
-          </Button>
-          {/* <form
-            onSubmit={handleSubmit}
-            name="newsletter"
-            method="post"
-            data-netlify="true"
-            data-netlify-honeypot="bot-field"
-          >
-            <input type="hidden" name="form-name" value="newsletter" />
+          <h6>IRETKOZZ FEL HÍRLEVELÜNKRE</h6>
 
-        
-            <div class="d-grid gap-2">
-              <input
-                id="email"
-                type="email"
-                name="email"
-                onChange={handleChange}
-                value={formState.email}
-                placeholder="E-mail címed"
-                required
-              />{" "}
-            </div>
-            <div className="d-grid gap-2">
-              <Button className="btn btn-dark" type="submit">
-                Küldés
-              </Button>
-            </div>
-          </form> */}
+          <>
+            <Button variant="primary" onClick={handleShow}>
+              Feliratkozás
+            </Button>
+
+            <Modal show={show} onHide={handleClose}>
+              <Modal.Header closeButton>
+                <Modal.Title>Feliratkozás hírlevélre</Modal.Title>
+              </Modal.Header>
+              <Modal.Body>
+                <form
+                  onSubmit={handleSubmit}
+                  name="newsletter"
+                  method="post"
+                  data-netlify="true"
+                  data-netlify-honeypot="bot-field"
+                >
+                  <input type="hidden" name="form-name" value="newsletter" />
+
+                  <div class="d-grid gap-2">
+                    <input
+                      id="email"
+                      type="email"
+                      name="email"
+                      onChange={handleChange}
+                      value={formState.email}
+                      placeholder="E-mail címed"
+                      required
+                    />{" "}
+                  </div>
+                  <div className="d-grid gap-2">
+                    <Button className="btn btn-dark" type="submit">
+                      Küldés
+                    </Button>
+                  </div>
+                </form>
+              </Modal.Body>
+            </Modal>
+          </>
         </Col>
         <Col sm>
           <h6>ADATVÉDELEM</h6>
