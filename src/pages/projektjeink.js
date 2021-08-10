@@ -28,7 +28,7 @@ export default function Projektjeink() {
               <Card className="projektjeink__cardHover">
                 <StaticImage
                   src="../images/Eddie_book.jpg"
-                  width={300}
+                  width={220}
                   layout="fullWidth"
                   loading="eager"
                   quality={95}
@@ -81,13 +81,12 @@ export default function Projektjeink() {
             </Accordion>
             <br />
           </Col>
-          <br />
           <Col md={4}>
             <Accordion>
               <Card className="projektjeink__cardHover">
                 <StaticImage
                   src="../images/yo_ve_book.jpg"
-                  width={300}
+                  width={220}
                   layout="fullWidth"
                   loading="eager"
                   quality={95}
@@ -95,7 +94,6 @@ export default function Projektjeink() {
                   alt="Jóga és vegánság"
                   placeholder="blurred"
                 />
-
                 <Card.Body className="bodyColor">
                   <Card.Title>Jóga és Vegánság - könyv</Card.Title>
                   <br />
@@ -127,13 +125,12 @@ export default function Projektjeink() {
             </Accordion>
             <br />
           </Col>
-          <br />
           <Col md={4}>
             <Accordion>
               <Card className="projektjeink__cardHover">
                 <StaticImage
                   src="../images/how_to_know.jpg"
-                  width={300}
+                  width={220}
                   layout="fullWidth"
                   loading="eager"
                   quality={95}
