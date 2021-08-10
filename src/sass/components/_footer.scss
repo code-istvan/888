@@ -3,15 +3,14 @@
 .footer__first_block {
   background-color: color(gray);
   border-top: 2px solid color(black);
-  margin-left: 10px;
-  margin-right: 10px;
-  text-align: center;
   margin-top: 15px;
 }
 
 .footer__first_block p {
   text-align: center;
   margin-top: 15px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .footer__second_block {
@@ -25,7 +24,7 @@
 }
 
 .footer__third_block p {
-  margin-top: 10px;
+  margin-top: 15px;
   text-decoration: none;
 }
 
@@ -39,7 +38,6 @@ input {
 @media screen and (max-width: 610px) {
   .col-sm {
     margin-bottom: 20px;
-    text-align: center;
   }
   .btn {
     margin-bottom: 15px;
@@ -59,10 +57,10 @@ img {
   color: whitesmoke;
 }
 
-.footer__button__newsletter {
-  border: solid black;
-  padding: 6px;
-}
+// .footer__button__newsletter {
+//   border: solid black;
+//   padding: 6px;
+// }
 
 .col-sm {
   text-align: center;
@@ -73,8 +71,8 @@ img {
   border-color: color(black);
   padding-left: 70px;
   padding-right: 70px;
-  padding-top: 7px;
-  padding-bottom: 7px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   border-radius: 20px;
   color: whitesmoke;
 }

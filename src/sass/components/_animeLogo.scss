@@ -1,3 +1,5 @@
+@import "../base/_defaults";
+
 @media (prefers-reduced-motion: no-preference) {
   #inside {
     animation: inside-spin infinite 20s linear;
