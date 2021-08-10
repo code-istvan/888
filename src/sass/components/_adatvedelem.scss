@@ -1,13 +1,12 @@
-// h1 {
-//   padding-top: 20px;
-//   padding-bottom: 20px;
-// }
+@import "../base/_defaults";
 
-// .maincontainer {
-//   margin-bottom: 20px;
-//   margin-left: 50px;
-//   margin-right: 50px;
-// }
+.adatvedelem__abc_order {
+  list-style-type: lower-latin;
+}
+
+.adatvedelem__underline {
+  text-decoration: underline;
+}
 
 // .underline {
 //   text-decoration: underline;

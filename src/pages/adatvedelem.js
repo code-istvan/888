@@ -7,12 +7,14 @@ import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "../sass/components/_adatvedelem.scss"
+import AdatvedelemTable from "../components/AdatvedelemTable"
+import AdatvedelemTable1 from "../components/AdatvedelemTable1"
 
 export default function Adatvedelem() {
   return (
     <Layout>
       <Seo title="Adatvédelmi tájékoztató" />
-      <Container className="maincontainer">
+      <Container className="text_align_justify">
         <Row>
           <Col>
             <h1>Adatvédelmi tájékoztató</h1>
@@ -20,7 +22,6 @@ export default function Adatvedelem() {
         </Row>
         <Row>
           <Col>
-            {/* <PaddingP> */}
             <h4>Preambulum</h4>
             <p>
               A jelen tájékoztató („<strong>Adatvédelmi Tájékoztató</strong>”)
@@ -65,7 +66,9 @@ export default function Adatvedelem() {
               <Link href="https://nyolcag.hu">nyolcag.hu</Link>
               <br />
             </p>
-            <h4 className="underline">I. Honlapra vonatkozó adatkezelés</h4>
+            <h4 className="adatvedelem__underline">
+              I. Honlapra vonatkozó adatkezelés
+            </h4>
             <br />
             <h4>
               1. Az adatkezelés rövid bemutatása az egyes adatkezelési
@@ -143,9 +146,9 @@ export default function Adatvedelem() {
               adatmegőrzési idő megjelölésével <br />
             </h4>
             <br />
-            {/* <AdatvedelemTable /> */}
+            <AdatvedelemTable />
             <br />
-            <h4 className="underline">
+            <h4 className="adatvedelem__underline">
               II. Támogatásra, adományozásra vonatkozó adatkezelés
             </h4>
             <br />
@@ -194,9 +197,9 @@ export default function Adatvedelem() {
               az adatmegőrzési idő megjelölésével
             </h4>
             <br />
-            {/* <AdatvedelemTable1 /> */}
+            <AdatvedelemTable1 />
             <br />
-            <h4 className="underline">
+            <h4 className="adatvedelem__underline">
               III. Az Ön jogai és jogorvoslati lehetőségei
             </h4>
             <br />
@@ -217,7 +220,7 @@ export default function Adatvedelem() {
               jogosult arra, hogy a személyes adatokhoz és a következő
               információkhoz hozzáférést kapjon:
             </p>
-            <ul className="abc">
+            <ul className="adatvedelem__abc_order">
               <li>
                 <p>adatkezelés céljai;</p>
               </li>
@@ -275,7 +278,7 @@ export default function Adatvedelem() {
               Az Alapítvány késedelem nélkül törli az érintett személyes
               adatokat, amennyiben:
             </p>
-            <ul className="abc">
+            <ul className="adatvedelem__abc_order">
               <li>
                 <p>
                   már nincs szükség a személyes adatokra a meghatározott
@@ -329,7 +332,7 @@ export default function Adatvedelem() {
               Az adatkezelés korlátozására abban az esetben kerülhet sor,
               amennyiben:
             </p>
-            <ul className="abc">
+            <ul className="adatvedelem__abc_order">
               <li>
                 <p>
                   Ön vitatja adatainak pontosságát; ebben az esetben az adatok
@@ -355,7 +358,7 @@ export default function Adatvedelem() {
               a tárolás kivételével csak a következő esetekben lehet jogszerűen
               kezelni:
             </p>
-            <ul className="abc">
+            <ul className="adatvedelem__abc_order">
               <li>
                 <p>Ön hozzájárul az adatkezeléshez;</p>
               </li>
@@ -495,7 +498,6 @@ export default function Adatvedelem() {
               lakóhelye vagy tartózkodási helye szerint illetékes törvényszék
               előtt is megindíthatja.{" "}
             </p>
-            {/* </PaddingP> */}
           </Col>
         </Row>
       </Container>

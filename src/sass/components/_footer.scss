@@ -8,9 +8,7 @@
 
 .footer__first_block p {
   text-align: center;
-  margin-top: 15px;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin: 15px 50px 0px;
 }
 
 .footer__second_block {
@@ -57,11 +55,6 @@ img {
   color: whitesmoke;
 }
 
-// .footer__button__newsletter {
-//   border: solid black;
-//   padding: 6px;
-// }
-
 .col-sm {
   text-align: center;
 }
@@ -69,10 +62,7 @@ img {
 .footer_button {
   background-color: color(black);
   border-color: color(black);
-  padding-left: 70px;
-  padding-right: 70px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding: 8px 70px;
   border-radius: 20px;
   color: whitesmoke;
 }
