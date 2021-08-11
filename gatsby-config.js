@@ -36,7 +36,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [`Merriweather`],
-        display: "swap",
+        display: "Budapest, Frankel Leó út 18, 1027 Magyarország",
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

@@ -1,12 +1,12 @@
 import React from "react"
-import Layout from "../components/layout"
+import LayoutKapcsolat from "../components/LayoutKapcsolat"
 import Seo from "../components/seo"
 
 export default function Kapcsolat() {
   return (
-    <Layout>
+    <LayoutKapcsolat>
       <Seo title="Kapcsolat" />
-      <h1>KAPCSOLAT</h1>
-    </Layout>
+      <h1>Kapcsolat</h1>
+    </LayoutKapcsolat>
   )
 }
