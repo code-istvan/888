@@ -3,42 +3,62 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Button from "react-bootstrap/Button"
 import { Row, Col } from "react-bootstrap"
+import { Link } from "gatsby"
+import "../sass/components/_kapcsolat.scss"
 
 export default function Kapcsolat() {
   return (
     <Layout>
       <Seo title="Kapcsolat" />
-      <h1>Kapcsolat</h1>
+      <Row>
+        <Col>
+          <h1>Kapcsolat</h1>
+        </Col>
+      </Row>
       <form
+        className="kapcsolat__inputfield"
         name="contact 8ag"
         method="post"
         data-netlify="true"
         onSubmit="submit"
+        data-netlify-honeypot="bot-field"
       >
         <input type="hidden" name="form-name" value="contact 8ag" />
-
+        <div hidden>
+          <input name="bot-field" />
+        </div>
         <Row>
-          <Col>
-            <input type="text" name="name" placeholder="Név*" required />
-          </Col>
-          <Col>
+          <Col sm={6}>
+            <input type="text" name="name" placeholder="Név" required />
+            <br />
             <input
               id="email"
               type="email"
               name="email"
-              placeholder="*"
-              placeholder="E-mail cím*"
+              placeholder="E-mail cím"
             />
           </Col>
-        </Row>
-
-        <Row>
-          <Col>
-            <textarea name="comments" placeholder="Üzenet*" required></textarea>
+          <Col sm={6}>
+            <textarea
+              name="comments"
+              rows="3"
+              placeholder="Üzenet"
+              required
+            ></textarea>
           </Col>
         </Row>
-
-        <Button type="submit">Küldés</Button>
+        <Row>
+          <Col className="d-grid gap-2">
+            <Button type="submit" variant="outline-dark">
+              Küldés
+            </Button>
+            <label>
+              <input type="checkbox" required /> Megismertem és elfogadom az
+              <Link href="/adatvedelem"> adatvédelmi tájékoztatót</Link>,
+              hozzájárulok e-mail címem kezeléséhez.
+            </label>
+          </Col>
+        </Row>
       </form>
     </Layout>
   )

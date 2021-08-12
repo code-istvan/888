@@ -1,0 +1,23 @@
+@import "../base/_defaults";
+
+.kapcsolat__inputfield input {
+  border: 2px solid color(gray);
+  //   width: 100%;
+}
+
+input[type="text"] {
+  width: 100%;
+}
+
+input[type="email"] {
+  width: 100%;
+}
+
+.kapcsolat__inputfield textarea {
+  border: 2px solid color(gray);
+  width: 100%;
+}
+
+button[type="submit"] {
+  border: 2px solid color(gray);
+}

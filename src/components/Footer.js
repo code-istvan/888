@@ -1,8 +1,6 @@
 import React, { useState } from "react"
 import "bootstrap/dist/css/bootstrap.min.css"
 import { Link } from "gatsby"
-// import { navigate } from "gatsby"
-// import { navigate } from "gatsby"
 import { Row, Col } from "react-bootstrap"
 import Modal from "react-bootstrap/Modal"
 import Container from "react-bootstrap/Container"
