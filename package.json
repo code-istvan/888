@@ -21,8 +21,6 @@
     "gatsby-source-filesystem": "^3.10.0",
     "gatsby-source-googlemaps-geocoding": "^1.0.0",
     "gatsby-transformer-sharp": "^3.10.0",
-    "leaflet": "^1.7.1",
-    "mapbox-gl": "^2.4.0",
     "node-sass": "^6.0.1",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
