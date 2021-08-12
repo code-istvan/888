@@ -47,11 +47,13 @@ export default function Kapcsolat() {
             ></textarea>
           </Col>
         </Row>
+
         <Row>
           <Col className="d-grid gap-2">
-            <Button type="submit" variant="outline-dark">
+            <Button type="submit" variant="dark">
               Küldés
             </Button>
+
             <label>
               <input type="checkbox" required /> Megismertem és elfogadom az
               <Link href="/adatvedelem"> adatvédelmi tájékoztatót</Link>,
