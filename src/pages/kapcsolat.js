@@ -9,7 +9,7 @@ export default function Kapcsolat() {
     <Layout>
       <Seo title="Kapcsolat" />
       <h1>Kapcsolat</h1>
-      {/* <form
+      <form
         name="contact 8ag"
         method="post"
         data-netlify="true"
@@ -39,7 +39,7 @@ export default function Kapcsolat() {
         </Row>
 
         <Button type="submit">Küldés</Button>
-      </form> */}
+      </form>
     </Layout>
   )
 }
