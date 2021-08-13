@@ -28,35 +28,6 @@ const Footer = () => {
     }
   }
 
-  // const [formState, setFormState] = useState({
-  //   email: "",
-  // })
-
-  // const encode = data => {
-  //   return Object.keys(data)
-  //     .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-  //     .join("&")
-  // }
-
-  // const handleChange = e => {
-  //   setFormState({
-  //     ...formState,
-  //     [e.target.name]: e.target.value,
-  //   })
-  // }
-
-  // const handleSubmit = e => {
-  //   fetch("/", {
-  //     method: "POST",
-  //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
-  //     body: encode({ "form-name": "newsletter", ...formState }),
-  //   })
-  //     .then(() => alert("Sikeresen feliratkoztál hírlevelünkre!"))
-  //     .catch(error => alert(error))
-
-  //   e.preventDefault()
-  // }
-
   const [show, setShow] = useState(false)
   const handleClose = () => setShow(false)
   const handleShow = () => setShow(true)
@@ -75,7 +46,6 @@ const Footer = () => {
         </Col>
       </Row>
       <Row className="footer__second_block">
-        {/* <Row xs={1} md={2} lg={3} className='backgroundColor'> */}
         <Col sm>
           <h6>LEGYÉL A BARÁTUNK</h6>
           <Icons
@@ -137,11 +107,10 @@ const Footer = () => {
                   </div>
                   <div class="d-grid gap-2">
                     <input
+                      className="feliratkozas__inputfield"
                       id="email"
                       type="email"
                       name="email"
-                      // onChange={handleChange}
-                      // value={formState.email}
                       placeholder="E-mail címed"
                       required
                     />{" "}
@@ -152,7 +121,7 @@ const Footer = () => {
                       className="footer__button-feliratkozas__modal__button"
                       type="submit"
                     >
-                      Küldés
+                      Feliratkozás
                     </Button>
                   </div>
                   <br />
