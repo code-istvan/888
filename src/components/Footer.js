@@ -28,34 +28,34 @@ const Footer = () => {
     }
   }
 
-  const [formState, setFormState] = useState({
-    email: "",
-  })
+  // const [formState, setFormState] = useState({
+  //   email: "",
+  // })
 
-  const encode = data => {
-    return Object.keys(data)
-      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-      .join("&")
-  }
+  // const encode = data => {
+  //   return Object.keys(data)
+  //     .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+  //     .join("&")
+  // }
 
-  const handleChange = e => {
-    setFormState({
-      ...formState,
-      [e.target.name]: e.target.value,
-    })
-  }
+  // const handleChange = e => {
+  //   setFormState({
+  //     ...formState,
+  //     [e.target.name]: e.target.value,
+  //   })
+  // }
 
-  const handleSubmit = e => {
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "newsletter", ...formState }),
-    })
-      .then(() => alert("Sikeresen feliratkoztál hírlevelünkre!"))
-      .catch(error => alert(error))
+  // const handleSubmit = e => {
+  //   fetch("/", {
+  //     method: "POST",
+  //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
+  //     body: encode({ "form-name": "newsletter", ...formState }),
+  //   })
+  //     .then(() => alert("Sikeresen feliratkoztál hírlevelünkre!"))
+  //     .catch(error => alert(error))
 
-    e.preventDefault()
-  }
+  //   e.preventDefault()
+  // }
 
   const [show, setShow] = useState(false)
   const handleClose = () => setShow(false)
@@ -125,21 +125,23 @@ const Footer = () => {
                 <br />
 
                 <form
-                  onSubmit={handleSubmit}
+                  onSubmit="submit"
                   name="newsletter"
                   method="post"
                   data-netlify="true"
                   data-netlify-honeypot="bot-field"
                 >
                   <input type="hidden" name="form-name" value="newsletter" />
-
+                  <div hidden>
+                    <input name="bot-field" />
+                  </div>
                   <div class="d-grid gap-2">
                     <input
                       id="email"
                       type="email"
                       name="email"
-                      onChange={handleChange}
-                      value={formState.email}
+                      // onChange={handleChange}
+                      // value={formState.email}
                       placeholder="E-mail címed"
                       required
                     />{" "}

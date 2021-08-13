@@ -36,6 +36,7 @@ export default function Kapcsolat() {
               type="email"
               name="email"
               placeholder="E-mail cím"
+              required
             />
           </Col>
           <Col sm={6}>
