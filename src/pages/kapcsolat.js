@@ -41,7 +41,7 @@ export default function Kapcsolat() {
           <Col sm={6}>
             <textarea
               name="comments"
-              rows="3"
+              rows="2"
               placeholder="Üzenet"
               required
             ></textarea>
@@ -50,7 +50,7 @@ export default function Kapcsolat() {
 
         <Row>
           <Col className="d-grid gap-2">
-            <Button type="submit" variant="dark">
+            <Button type="submit" className="kapcsolat__button">
               Küldés
             </Button>
 

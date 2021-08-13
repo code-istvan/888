@@ -51,19 +51,20 @@ img {
   text-decoration: none !important;
 }
 
-.footer__link:hover {
-  color: whitesmoke;
-}
-
 .col-sm {
   text-align: center;
 }
 
-.footer_button {
+.footer__button {
   background-color: color(black);
   border-color: color(black);
-  font-size: 1.2rem;
-  padding: 5px 50px;
+  padding: 7px 60px;
   border-radius: 20px;
   color: whitesmoke;
+}
+
+.footer__button-feliratkozas__modal__button {
+  background-color: color(black);
+  border: 2px solid color(black);
+  padding: 8px;
 }

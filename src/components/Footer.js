@@ -107,7 +107,7 @@ const Footer = () => {
           <h6>IRATKOZZ FEL HÍRLEVELÜNKRE</h6>
 
           <>
-            <Button className="footer_button" onClick={handleShow}>
+            <Button className="footer__button" onClick={handleShow}>
               Feliratkozás
             </Button>
 
@@ -146,7 +146,10 @@ const Footer = () => {
                   </div>
 
                   <div className="d-grid gap-2">
-                    <Button className="btn btn-dark" type="submit">
+                    <Button
+                      className="footer__button-feliratkozas__modal__button"
+                      type="submit"
+                    >
                       Küldés
                     </Button>
                   </div>
