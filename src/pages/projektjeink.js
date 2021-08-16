@@ -165,6 +165,10 @@ export default function Projektjeink() {
             <br />
           </Col>
         </Row>
+        <br />
+        <Row>
+          <Col></Col>
+        </Row>
       </Container>
     </Layout>
   )
