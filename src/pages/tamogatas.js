@@ -6,9 +6,9 @@ import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import Card from "react-bootstrap/Card"
 import Button from "react-bootstrap/Button"
-import Accordion from "react-bootstrap/Accordion"
 import { Link } from "gatsby"
 import MyPDF from "../images/8ag_egyszazalek.pdf"
+import MyPDF2 from "../images/8ag_szamlaszam.pdf"
 
 export default function Tamogatas() {
   return (
@@ -17,9 +17,6 @@ export default function Tamogatas() {
       <h1>Támogatás</h1>
 
       <Container className="maincontainer">
-        <Row>
-          <Col></Col>
-        </Row>
         <Row>
           <Col>
             <div
@@ -110,10 +107,73 @@ export default function Tamogatas() {
                   data-bs-parent="#accordionFlushExample"
                 >
                   <div className="accordion-body">
-                    Placeholder content for this accordion, which is intended to
-                    demonstrate the <code>.accordion-flush</code> class. This is
-                    the second item's accordion body. Let's imagine this being
-                    filled with some actual content.
+                    <Row>
+                      <Col>
+                        <p>
+                          Ha valamelyik{" "}
+                          <Link href="/projektjeink">projektünket</Link>{" "}
+                          szeretnéd támogatni az alábbi finanszírozási
+                          lehetőségek közűl válaszhatsz.
+                        </p>
+                      </Col>
+                    </Row>
+                    <Row className="justify-content-md-center">
+                      <Col className="justify">
+                        <div className="alert alert-primary" role="alert">
+                          Amennyiben szeretnéd, hogy a támogatás (adomány)
+                          beérkezését követően a nevedet és a támogatás
+                          összegét, vagy csak a nevedet az Alapítvány honlapján
+                          nyilvánosságra hozzuk, ehhez hozzájárulásod az
+                          <Link href="/adatvedelem">
+                            {" "}
+                            Adatvédelmi Tájékoztató{" "}
+                          </Link>
+                          II. pontjában foglaltak szerint adhatod meg.
+                        </div>
+                      </Col>
+                    </Row>
+
+                    <Row>
+                      <Col>
+                        <Card className="taxnumber">
+                          <Card.Header as="h3">Banki átutalás</Card.Header>
+                          <Card.Body>
+                            <Card.Text>
+                              Budapest Bank (forint alapú bankszámla)
+                            </Card.Text>
+                            <Card.Title as="h1">
+                              10103104-54928200-01004009
+                            </Card.Title>
+                            <Card.Text>
+                              Kedvezményezett neve: Nyolcágú jóga alapítvány
+                              <hr /> Kérjük, hogy a közleménybe írjátok be a
+                              támogatni kívánt{" "}
+                              <Link href="/projektjeink">projekt</Link> nevét.
+                              Vagy ha az általános működésünket szeretnéd
+                              támogatni írd be a közleménybe: “általános”. A
+                              közlemény nélkül beérkező összegeket alapítványunk
+                              alaptevékenységére fordítjuk. Példa: ha a{" "}
+                              <Link href="/projektjeink">ONE SIMPLE THING</Link>{" "}
+                              projektet szeretné támogatni, a közleménybe ezt
+                              írd: “one simple thing”.
+                            </Card.Text>
+                            <Button
+                              variant="primary"
+                              href={MyPDF2}
+                              download="8ag_szamlaszam.pdf"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              Adatok letöltése .pdf-be
+                            </Button>
+                          </Card.Body>
+                          <Card.Footer className="text-muted">
+                            <b>Köszönjük :-)</b>
+                          </Card.Footer>
+                        </Card>
+                      </Col>
+                    </Row>
+                    <br />
                   </div>
                 </div>
               </div>
