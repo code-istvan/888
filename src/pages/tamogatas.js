@@ -203,7 +203,7 @@ export default function Tamogatas() {
                           <Modal.Body>
                             {/* -------form------- */}
                             <form
-                              name="posta-csekk"
+                              name="postacsekk"
                               method="post"
                               data-netlify="true"
                               onSubmit="submit"
@@ -212,7 +212,7 @@ export default function Tamogatas() {
                               <input
                                 type="hidden"
                                 name="form-name"
-                                value="posta-csekk"
+                                value="postacsekk"
                               />
                               <div hidden>
                                 <input name="bot-field" />
@@ -221,21 +221,21 @@ export default function Tamogatas() {
                                 type="text"
                                 placeholder="Ide írd a családneved*"
                                 name="csaladnev"
-                                className="InputMassage"
+                                // className="InputMassage"
                                 required
                               />{" "}
                               <input
                                 type="text"
                                 placeholder="Ide írd a keresztneved*"
                                 name="keresztnev"
-                                className="InputMassage"
+                                // className="InputMassage"
                                 required
                               />{" "}
                               <input
                                 type="text"
                                 placeholder="Pontos cím, emelet ajtó ha van*"
                                 name="utca"
-                                className="InputMassage"
+                                // className="InputMassage"
                                 required
                               />{" "}
                               <input
@@ -244,14 +244,14 @@ export default function Tamogatas() {
                                 name="iranyitoszam"
                                 pattern="[0-9]{4}"
                                 maxLength="4"
-                                className="InputMassage"
+                                // className="InputMassage"
                                 required
                               />{" "}
                               <input
                                 type="text"
                                 placeholder="Város*"
                                 name="varos"
-                                className="InputMassage"
+                                // className="InputMassage"
                                 required
                               />
                               <textarea
@@ -263,9 +263,8 @@ export default function Tamogatas() {
                               <br />
                               <div className="d-grid gap-2">
                                 <Button
-                                  variant="dark"
                                   type="submit"
-                                  className="btn btn-primary"
+                                  // className="btn btn-primary"
                                 >
                                   Küldés
                                 </Button>
