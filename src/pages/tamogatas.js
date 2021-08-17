@@ -200,7 +200,7 @@ export default function Tamogatas() {
                         <Modal.Body>
                           {/* -------form------- */}
                           <form
-                            name="postacsekk"
+                            name="csekk"
                             method="post"
                             data-netlify="true"
                             onSubmit="submit"
@@ -209,13 +209,14 @@ export default function Tamogatas() {
                             <input
                               type="hidden"
                               name="form-name"
-                              value="postacsekk"
-                            />
+                              value="csekk"
+                            >
                             <div hidden>
                               <input name="bot-field" />
                             </div>{" "}
                             <input
                               type="text"
+                              id="csaladnev"
                               placeholder="Ide írd a családneved*"
                               name="csaladnev"
                               // className="InputMassage"
@@ -277,52 +278,6 @@ export default function Tamogatas() {
                               , hozzájárulok személyes adataim kezeléséhez
                             </label>
                           </form>
-                          {/* --------form-vege---- */}
-                          {/* <form
-                              onSubmit="submit"
-                              name="newsletter"
-                              method="post"
-                              data-netlify="true"
-                              data-netlify-honeypot="bot-field"
-                            >
-                              <input
-                                type="hidden"
-                                name="form-name"
-                                value="newsletter"
-                              />
-                              <div hidden>
-                                <input name="bot-field" />
-                              </div>
-                              <div class="d-grid gap-2">
-                                <input
-                                  className="feliratkozas__inputfield"
-                                  id="email"
-                                  type="email"
-                                  name="email"
-                                  placeholder="E-mail címed"
-                                  required
-                                />{" "}
-                              </div>
-
-                              <div className="d-grid gap-2">
-                                <Button
-                                  className="footer__button-feliratkozas__modal__button"
-                                  type="submit"
-                                >
-                                  Csekk igénylés
-                                </Button>
-                              </div>
-                              <br />
-                              <label>
-                                <input type="checkbox" required /> Megismertem
-                                és elfogadom az
-                                <Link href="/adatvedelem">
-                                  {" "}
-                                  Adatvédelmi tájékoztatót
-                                </Link>
-                                , hozzájárulok adataim kezeléséhez.
-                              </label>
-                            </form> */}
                         </Modal.Body>
                       </Modal>
                     </Card.Text>
