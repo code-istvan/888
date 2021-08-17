@@ -203,7 +203,7 @@ export default function Tamogatas() {
                           <Modal.Body>
                             {/* -------form------- */}
                             <form
-                              name="post-form"
+                              name="posta-csekk"
                               method="post"
                               data-netlify="true"
                               onSubmit="submit"
@@ -212,14 +212,16 @@ export default function Tamogatas() {
                               <input
                                 type="hidden"
                                 name="form-name"
-                                value="post-form"
-                              />{" "}
+                                value="posta-csekk"
+                              />
+                              <div hidden>
+                                <input name="bot-field" />
+                              </div>{" "}
                               <input
                                 type="text"
                                 placeholder="Ide írd a családneved*"
                                 name="csaladnev"
                                 className="InputMassage"
-                                // onChange={inputClick3}
                                 required
                               />{" "}
                               <input
@@ -227,7 +229,6 @@ export default function Tamogatas() {
                                 placeholder="Ide írd a keresztneved*"
                                 name="keresztnev"
                                 className="InputMassage"
-                                // onChange={inputClick3}
                                 required
                               />{" "}
                               <input
@@ -235,17 +236,15 @@ export default function Tamogatas() {
                                 placeholder="Pontos cím, emelet ajtó ha van*"
                                 name="utca"
                                 className="InputMassage"
-                                // onChange={inputClick3}
                                 required
                               />{" "}
                               <input
                                 type="text"
                                 placeholder="Irányítószám*"
-                                name="iranyito"
+                                name="iranyitoszam"
                                 pattern="[0-9]{4}"
                                 maxLength="4"
                                 className="InputMassage"
-                                // onChange={inputClick3}
                                 required
                               />{" "}
                               <input
@@ -253,14 +252,12 @@ export default function Tamogatas() {
                                 placeholder="Város*"
                                 name="varos"
                                 className="InputMassage"
-                                // onChange={inputClick3}
                                 required
                               />
                               <textarea
                                 name="message"
                                 className="InputMassage"
                                 placeholder="Kézbesítési információ. Kitöltése nem kötelező!"
-                                // onChange={inputClick3}
                               ></textarea>
                               <br />
                               <br />
@@ -275,13 +272,7 @@ export default function Tamogatas() {
                               </div>
                               <br />
                               <label>
-                                <input
-                                  type="checkbox"
-                                  id="gdpr"
-                                  name="gdpr"
-                                  value="true"
-                                  required
-                                ></input>{" "}
+                                <input type="checkbox" required></input>{" "}
                                 Megismertem és elfogadom az{" "}
                                 <Link href="/adatvedelem">
                                   {" "}
