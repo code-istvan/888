@@ -6,15 +6,15 @@ import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import Card from "react-bootstrap/Card"
 import Button from "react-bootstrap/Button"
-import Modal from "react-bootstrap/Modal"
+// import Modal from "react-bootstrap/Modal"
 import { Link } from "gatsby"
 import MyPDF from "../pdfs/8ag_egyszazalek.pdf"
 import MyPDF2 from "../pdfs/8ag_szamlaszam.pdf"
 
 export default function Tamogatas() {
-  const [show, setShow] = useState(false)
-  const handleClose = () => setShow(false)
-  const handleShow = () => setShow(true)
+  // const [show, setShow] = useState(false)
+  // const handleClose = () => setShow(false)
+  // const handleShow = () => setShow(true)
 
   return (
     <Layout>
@@ -188,21 +188,149 @@ export default function Tamogatas() {
                         </Link>{" "}
                         tájékozódhatsz erről.
                       </p>
-                      <>
-                        <Button
+                      {/* <> */}
+                      {/* <Button
                           className="btn btn-primary"
                           onClick={handleShow}
                         >
                           Csekk igénylése
-                        </Button>
+                        </Button> */}
 
-                        <Modal show={show} onHide={handleClose}>
+                      <button
+                        type="button"
+                        className="btn btn-primary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                      >
+                        Csekk igénylés
+                      </button>
+
+                      <div
+                        className="modal fade"
+                        id="exampleModal"
+                        tabindex="-1"
+                        aria-labelledby="exampleModalLabel"
+                        aria-hidden="true"
+                      >
+                        <div className="modal-dialog">
+                          <div className="modal-content">
+                            <div className="modal-header">
+                              <h5
+                                className="modal-title"
+                                id="exampleModalLabel"
+                              >
+                                Postai csekk igénylése
+                              </h5>
+                              <button
+                                type="button"
+                                className="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <div className="modal-body">
+                              <form
+                                name="csekk"
+                                method="post"
+                                data-netlify="true"
+                                onSubmit="submit"
+                                data-netlify-honeypot="bot-field"
+                              >
+                                <input
+                                  type="hidden"
+                                  name="form-name"
+                                  value="csekk"
+                                />
+                                <div hidden>
+                                  <input name="bot-field" />
+                                </div>{" "}
+                                <input
+                                  type="text"
+                                  placeholder="Ide írd a családneved*"
+                                  name="csaladnev"
+                                  // className="InputMassage"
+                                  required
+                                />{" "}
+                                <input
+                                  type="text"
+                                  placeholder="Ide írd a keresztneved*"
+                                  name="keresztnev"
+                                  // className="InputMassage"
+                                  required
+                                />{" "}
+                                <input
+                                  type="text"
+                                  placeholder="Pontos cím, emelet ajtó ha van*"
+                                  name="utca"
+                                  // className="InputMassage"
+                                  required
+                                />{" "}
+                                <input
+                                  type="text"
+                                  placeholder="Irányítószám*"
+                                  name="iranyitoszam"
+                                  pattern="[0-9]{4}"
+                                  maxLength="4"
+                                  // className="InputMassage"
+                                  required
+                                />{" "}
+                                <input
+                                  type="text"
+                                  placeholder="Város*"
+                                  name="varos"
+                                  // className="InputMassage"
+                                  required
+                                />
+                                <textarea
+                                  name="message"
+                                  className="InputMassage"
+                                  placeholder="Kézbesítési információ. Kitöltése nem kötelező!"
+                                ></textarea>
+                                <br />
+                                <br />
+                                <div className="d-grid gap-2">
+                                  <Button
+                                    type="submit"
+                                    // className="btn btn-primary"
+                                  >
+                                    Küldés
+                                  </Button>
+                                </div>
+                                <br />
+                                <label>
+                                  <input type="checkbox" required></input>{" "}
+                                  Megismertem és elfogadom az{" "}
+                                  <Link href="/adatvedelem">
+                                    {" "}
+                                    Adatvédelmi tájékoztatót
+                                  </Link>
+                                  , hozzájárulok személyes adataim kezeléséhez
+                                </label>
+                              </form>
+                            </div>
+                            <div className="modal-footer">
+                              <button
+                                type="button"
+                                className="btn btn-secondary"
+                                data-bs-dismiss="modal"
+                              >
+                                Close
+                              </button>
+                              <button type="button" className="btn btn-primary">
+                                Save changes
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* <Modal show={show} onHide={handleClose}>
                           <Modal.Header closeButton>
                             <Modal.Title>Postai csekk igénylése</Modal.Title>
                           </Modal.Header>
                           <Modal.Body>
                             {/* -------form------- */}
-                            <form
+                      {/* <form
                               name="csekk"
                               method="post"
                               data-netlify="true"
@@ -282,7 +410,7 @@ export default function Tamogatas() {
                             </form>
                           </Modal.Body>
                         </Modal>
-                      </>
+                      </>  */}
                     </Card.Text>
                   </Card.Body>
                   <Card.Footer className="text-muted">
