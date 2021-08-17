@@ -219,7 +219,6 @@ export default function Tamogatas() {
                               </div>{" "}
                               <input
                                 type="text"
-                                id="csaladnev"
                                 placeholder="Ide írd a családneved*"
                                 name="csaladnev"
                                 // className="InputMassage"
