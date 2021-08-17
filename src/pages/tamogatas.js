@@ -188,100 +188,97 @@ export default function Tamogatas() {
                         </Link>{" "}
                         tájékozódhatsz erről.
                       </p>
-                      <>
-                        <Button
-                          className="btn btn-primary"
-                          onClick={handleShow}
-                        >
-                          Csekk igénylése
-                        </Button>
 
-                        <Modal show={show} onHide={handleClose}>
-                          <Modal.Header closeButton>
-                            <Modal.Title>Postai csekk igénylése</Modal.Title>
-                          </Modal.Header>
-                          <Modal.Body>
-                            {/* -------form------- */}
-                            <form
-                              name="postacsekk"
-                              method="post"
-                              data-netlify="true"
-                              onSubmit="submit"
-                              data-netlify-honeypot="bot-field"
-                            >
-                              <input
-                                type="hidden"
-                                name="form-name"
-                                value="postacsekk"
-                              />
-                              <div hidden>
-                                <input name="bot-field" />
-                              </div>{" "}
-                              <input
-                                type="text"
-                                placeholder="Ide írd a családneved*"
-                                name="csaladnev"
-                                // className="InputMassage"
-                                required
-                              />{" "}
-                              <input
-                                type="text"
-                                placeholder="Ide írd a keresztneved*"
-                                name="keresztnev"
-                                // className="InputMassage"
-                                required
-                              />{" "}
-                              <input
-                                type="text"
-                                placeholder="Pontos cím, emelet ajtó ha van*"
-                                name="utca"
-                                // className="InputMassage"
-                                required
-                              />{" "}
-                              <input
-                                type="text"
-                                placeholder="Irányítószám*"
-                                name="iranyitoszam"
-                                pattern="[0-9]{4}"
-                                maxLength="4"
-                                // className="InputMassage"
-                                required
-                              />{" "}
-                              <input
-                                type="text"
-                                placeholder="Város*"
-                                name="varos"
-                                // className="InputMassage"
-                                required
-                              />
-                              <textarea
-                                name="message"
-                                className="InputMassage"
-                                placeholder="Kézbesítési információ. Kitöltése nem kötelező!"
-                              ></textarea>
-                              <br />
-                              <br />
-                              <div className="d-grid gap-2">
-                                <Button
-                                  type="submit"
-                                  // className="btn btn-primary"
-                                >
-                                  Küldés
-                                </Button>
-                              </div>
-                              <br />
-                              <label>
-                                <input type="checkbox" required></input>{" "}
-                                Megismertem és elfogadom az{" "}
-                                <Link href="/adatvedelem">
-                                  {" "}
-                                  Adatvédelmi tájékoztatót
-                                </Link>
-                                , hozzájárulok személyes adataim kezeléséhez
-                              </label>
-                            </form>
-                            {/* --------form-vege---- */}
-                            {/* <form
+                      <Button className="btn btn-primary" onClick={handleShow}>
+                        Csekk igénylése
+                      </Button>
+
+                      <Modal show={show} onHide={handleClose}>
+                        <Modal.Header closeButton>
+                          <Modal.Title>Postai csekk igénylése</Modal.Title>
+                        </Modal.Header>
+                        <Modal.Body>
+                          {/* -------form------- */}
+                          <form
+                            name="postacsekk"
+                            method="post"
+                            data-netlify="true"
+                            onSubmit="submit"
+                            data-netlify-honeypot="bot-field"
+                          >
+                            <input
+                              type="hidden"
+                              name="form-name"
+                              value="postacsekk"
+                            />
+                            <div hidden>
+                              <input name="bot-field" />
+                            </div>{" "}
+                            <input
+                              type="text"
+                              placeholder="Ide írd a családneved*"
+                              name="csaladnev"
+                              // className="InputMassage"
+                              required
+                            />{" "}
+                            <input
+                              type="text"
+                              placeholder="Ide írd a keresztneved*"
+                              name="keresztnev"
+                              // className="InputMassage"
+                              required
+                            />{" "}
+                            <input
+                              type="text"
+                              placeholder="Pontos cím, emelet ajtó ha van*"
+                              name="utca"
+                              // className="InputMassage"
+                              required
+                            />{" "}
+                            <input
+                              type="text"
+                              placeholder="Irányítószám*"
+                              name="iranyitoszam"
+                              pattern="[0-9]{4}"
+                              maxLength="4"
+                              // className="InputMassage"
+                              required
+                            />{" "}
+                            <input
+                              type="text"
+                              placeholder="Város*"
+                              name="varos"
+                              // className="InputMassage"
+                              required
+                            />
+                            <textarea
+                              name="message"
+                              className="InputMassage"
+                              placeholder="Kézbesítési információ. Kitöltése nem kötelező!"
+                            ></textarea>
+                            <br />
+                            <br />
+                            <div className="d-grid gap-2">
+                              <Button
+                                type="submit"
+                                // className="btn btn-primary"
+                              >
+                                Küldés
+                              </Button>
+                            </div>
+                            <br />
+                            <label>
+                              <input type="checkbox" required></input>{" "}
+                              Megismertem és elfogadom az{" "}
+                              <Link href="/adatvedelem">
+                                {" "}
+                                Adatvédelmi tájékoztatót
+                              </Link>
+                              , hozzájárulok személyes adataim kezeléséhez
+                            </label>
+                          </form>
+                          {/* --------form-vege---- */}
+                          {/* <form
                               onSubmit="submit"
                               name="newsletter"
                               method="post"
@@ -326,9 +323,8 @@ export default function Tamogatas() {
                                 , hozzájárulok adataim kezeléséhez.
                               </label>
                             </form> */}
-                          </Modal.Body>
-                        </Modal>
-                      </>
+                        </Modal.Body>
+                      </Modal>
                     </Card.Text>
                   </Card.Body>
                   <Card.Footer className="text-muted">
