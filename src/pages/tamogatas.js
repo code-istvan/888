@@ -6,16 +6,12 @@ import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import Card from "react-bootstrap/Card"
 import Button from "react-bootstrap/Button"
-// import Modal from "react-bootstrap/Modal"
 import { Link } from "gatsby"
 import MyPDF from "../pdfs/8ag_egyszazalek.pdf"
 import MyPDF2 from "../pdfs/8ag_szamlaszam.pdf"
+import "../sass/components/_tamogatas.scss"
 
 export default function Tamogatas() {
-  // const [show, setShow] = useState(false)
-  // const handleClose = () => setShow(false)
-  // const handleShow = () => setShow(true)
-
   return (
     <Layout>
       <Seo title="Támogátas" />
@@ -188,14 +184,6 @@ export default function Tamogatas() {
                         </Link>{" "}
                         tájékozódhatsz erről.
                       </p>
-                      {/* <> */}
-                      {/* <Button
-                          className="btn btn-primary"
-                          onClick={handleShow}
-                        >
-                          Csekk igénylése
-                        </Button> */}
-
                       <button
                         type="button"
                         className="btn btn-primary"
@@ -230,6 +218,7 @@ export default function Tamogatas() {
                             </div>
                             <div className="modal-body">
                               <form
+                                className="kapcsolat__inputfield"
                                 name="csekk"
                                 method="post"
                                 data-netlify="true"
@@ -308,110 +297,33 @@ export default function Tamogatas() {
                                 </label>
                               </form>
                             </div>
-                            <div className="modal-footer">
-                              <button
-                                type="button"
-                                className="btn btn-secondary"
-                                data-bs-dismiss="modal"
-                              >
-                                Close
-                              </button>
-                              <button type="button" className="btn btn-primary">
-                                Save changes
-                              </button>
-                            </div>
                           </div>
                         </div>
                       </div>
-
-                      {/* <Modal show={show} onHide={handleClose}>
-                          <Modal.Header closeButton>
-                            <Modal.Title>Postai csekk igénylése</Modal.Title>
-                          </Modal.Header>
-                          <Modal.Body>
-                            {/* -------form------- */}
-                      {/* <form
-                              name="csekk"
-                              method="post"
-                              data-netlify="true"
-                              onSubmit="submit"
-                              data-netlify-honeypot="bot-field"
-                            >
-                              <input
-                                type="hidden"
-                                name="form-name"
-                                value="csekk"
-                              />
-                              <div hidden>
-                                <input name="bot-field" />
-                              </div>{" "}
-                              <input
-                                type="text"
-                                placeholder="Ide írd a családneved*"
-                                name="csaladnev"
-                                // className="InputMassage"
-                                required
-                              />{" "}
-                              <input
-                                type="text"
-                                placeholder="Ide írd a keresztneved*"
-                                name="keresztnev"
-                                // className="InputMassage"
-                                required
-                              />{" "}
-                              <input
-                                type="text"
-                                placeholder="Pontos cím, emelet ajtó ha van*"
-                                name="utca"
-                                // className="InputMassage"
-                                required
-                              />{" "}
-                              <input
-                                type="text"
-                                placeholder="Irányítószám*"
-                                name="iranyitoszam"
-                                pattern="[0-9]{4}"
-                                maxLength="4"
-                                // className="InputMassage"
-                                required
-                              />{" "}
-                              <input
-                                type="text"
-                                placeholder="Város*"
-                                name="varos"
-                                // className="InputMassage"
-                                required
-                              />
-                              <textarea
-                                name="message"
-                                className="InputMassage"
-                                placeholder="Kézbesítési információ. Kitöltése nem kötelező!"
-                              ></textarea>
-                              <br />
-                              <br />
-                              <div className="d-grid gap-2">
-                                <Button
-                                  type="submit"
-                                  // className="btn btn-primary"
-                                >
-                                  Küldés
-                                </Button>
-                              </div>
-                              <br />
-                              <label>
-                                <input type="checkbox" required></input>{" "}
-                                Megismertem és elfogadom az{" "}
-                                <Link href="/adatvedelem">
-                                  {" "}
-                                  Adatvédelmi tájékoztatót
-                                </Link>
-                                , hozzájárulok személyes adataim kezeléséhez
-                              </label>
-                            </form>
-                          </Modal.Body>
-                        </Modal>
-                      </>  */}
                     </Card.Text>
+                  </Card.Body>
+                  <Card.Footer className="text-muted">
+                    <b>Köszönjük :-)</b>
+                  </Card.Footer>
+                </Card>
+                <br />
+                <Card className="taxnumber">
+                  <Card.Header as="h3">PayPal</Card.Header>
+                  <Card.Body>
+                    <Card.Text>
+                      Van PayPal számlád? Adakozz gondtalanul! A{" "}
+                      <Link
+                        href="https://www.paypal.com/hu/home"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        PayPal
+                      </Link>{" "}
+                      pénzügyi adataid nem osztjuk meg a címzettel. Egyszerű,
+                      biztonságos, nyomkövethető és gyors. Ez a funkció jelenleg
+                      fejlesztés alatt van, hamarosan használható lesz.
+                    </Card.Text>
+                    {/* <DevTooltipPayPal /> */}
                   </Card.Body>
                   <Card.Footer className="text-muted">
                     <b>Köszönjük :-)</b>
@@ -431,7 +343,7 @@ export default function Tamogatas() {
                 aria-expanded="false"
                 aria-controls="flush-collapseThree"
               >
-                <h4>Működési támogatás</h4>
+                <h4>Üvegzseb</h4>
               </button>
             </h2>
             <div
@@ -441,12 +353,11 @@ export default function Tamogatas() {
               data-bs-parent="#accordionFlushExample"
             >
               <div className="accordion-body">
-                Placeholder content for this accordion, which is intended to
-                demonstrate the <code>.accordion-flush</code> class. This is the
-                third item's accordion body. Nothing more exciting happening
-                here in terms of content, but just filling up the space to make
-                it look, at least at first glance, a bit more representative of
-                how this would look in a real-world application.
+                <p>
+                  A Nyolcágú Jóga Alapítvány a bizalom és átláthatóság céljából
+                  létrehozta az üvegzseb oldalt. Projektjeink, működésünk
+                  cashfloja itt tekinthető meg.
+                </p>
               </div>
             </div>
           </div>
