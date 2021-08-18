@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Container from "react-bootstrap/Container"
@@ -9,21 +9,22 @@ import Button from "react-bootstrap/Button"
 import { Link } from "gatsby"
 import MyPDF from "../pdfs/8ag_egyszazalek.pdf"
 import MyPDF2 from "../pdfs/8ag_szamlaszam.pdf"
+// import facebook from "..//images/facebook.svg"
 import "../sass/components/_tamogatas.scss"
 
 export default function Tamogatas() {
   return (
     <Layout>
       <Seo title="Támogátas" />
-      <h1>Támogatás</h1>
 
       <Container className="maincontainer">
+        <h1>Támogatás</h1>
         <Row>
           <Col>
             <p>
-              Amennyiben egyetértesz tevékenységünkkel és szeretnéd támogatni
-              munkánk, a jóga népszerűsítését az alábbi módokon tudsz részt
-              vállalni küldetésünkben.
+              Amennyiben szimpatikus számodra tevékenységünk és szeretnéd
+              támogatni munkánk, a jóga népszerűsítését, az alábbi módokon tudsz
+              részt vállalni küldetésünkben.
             </p>
           </Col>
         </Row>
@@ -273,7 +274,7 @@ export default function Tamogatas() {
                                 <textarea
                                   name="message"
                                   className="InputMassage"
-                                  placeholder="Kézbesítési információ. Kitöltése nem kötelező!"
+                                  placeholder="Kézbesítési információ. Kitöltése nem kötelező."
                                 ></textarea>
                                 <br />
                                 <br />
@@ -321,9 +322,19 @@ export default function Tamogatas() {
                       </Link>{" "}
                       pénzügyi adataid nem osztjuk meg a címzettel. Egyszerű,
                       biztonságos, nyomkövethető és gyors. Ez a funkció jelenleg
-                      fejlesztés alatt van, hamarosan használható lesz.
+                      fejlesztés alatt van.
                     </Card.Text>
-                    {/* <DevTooltipPayPal /> */}
+
+                    <button
+                      type="button"
+                      className="btn btn-primary"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="top"
+                      title="Fejlesztés alatt"
+                      disabled
+                    >
+                      PayPal adomány
+                    </button>
                   </Card.Body>
                   <Card.Footer className="text-muted">
                     <b>Köszönjük :-)</b>
@@ -332,36 +343,24 @@ export default function Tamogatas() {
               </div>
             </div>
           </div>
-          {/* Itt végződik a posta befizetés kártya  */}
-          <div className="accordion-item">
-            <h2 className="accordion-header" id="flush-headingThree">
-              <button
-                className="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseThree"
-                aria-expanded="false"
-                aria-controls="flush-collapseThree"
-              >
-                <h4>Üvegzseb</h4>
-              </button>
-            </h2>
-            <div
-              id="flush-collapseThree"
-              className="accordion-collapse collapse"
-              aria-labelledby="flush-headingThree"
-              data-bs-parent="#accordionFlushExample"
-            >
-              <div className="accordion-body">
-                <p>
-                  A Nyolcágú Jóga Alapítvány a bizalom és átláthatóság céljából
-                  létrehozta az üvegzseb oldalt. Projektjeink, működésünk
-                  cashfloja itt tekinthető meg.
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
+        <br />
+        <br />
+        <Row>
+          <Col>
+            <div class="alert alert-primary" role="alert">
+              <h3>Üvegzseb program</h3>
+              <p>
+                A Nyolcágú Jóga Alapítvány a bizalom és átláthatóság céljából
+                létrehozta az üvegzseb oldalt. Projektjeink, működésünk{" "}
+                <a href="/uvegzseb" class="alert-link">
+                  cashfloja itt tekinthető
+                </a>{" "}
+                meg.
+              </p>
+            </div>
+          </Col>
+        </Row>
       </Container>
     </Layout>
   )
