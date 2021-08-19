@@ -29,6 +29,11 @@ export default function Üvegzseb({ data }) {
             <UvegzsebKiadas />
           </Col>
         </Row>
+
+        <p>
+          Az alapítvány fenttartási költségeit a kuratórium vezetősége, saját
+          bevételeiből finanszírozza.
+        </p>
       </Container>
     </Layout>
   )

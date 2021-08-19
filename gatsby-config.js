@@ -17,6 +17,7 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -39,6 +40,16 @@ module.exports = {
         display: "Budapest, Frankel Leó út 18, 1027 Magyarország",
       },
     },
+
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /assets/, // See below to configure properly
+        },
+      },
+    },
+
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

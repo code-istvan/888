@@ -72,3 +72,16 @@ img {
 .feliratkozas__inputfield {
   border: 2px solid color(gray);
 }
+
+.footer {
+  svg {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    fill: color(black, pure) fill-opacity= "0.81";
+  }
+
+  svg:hover {
+    fill: color(blue);
+  }
+}

@@ -5,7 +5,6 @@ import Navbar from "react-bootstrap/Navbar"
 import Nav from "react-bootstrap/Nav"
 import AnimeLogo from "./AnimeLogo"
 import "../sass/components/_navbar8.scss"
-// import { Container, Row } from "react-bootstrap"
 
 export default function Navbar8() {
   return (
