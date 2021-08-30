@@ -2,8 +2,7 @@ $gray: #a5a0a0;
 
 $colors: (
   black: (
-    base: rgb(16, 15, 15),
-    // base: rgb(16, 15, 15, 0.81),
+    base: rgba(16, 15, 15, 0.81),
     pure: black,
   ),
   white: (
@@ -11,7 +10,7 @@ $colors: (
   ),
   grey: (
     base: rgb(189, 189, 189),
-    sece: rgb(189, 189, 189),
+    secondary: rgba(189, 189, 189, 0.7),
     800: #2f2d32,
   ),
   blue: (

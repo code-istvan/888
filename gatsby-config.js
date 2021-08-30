@@ -33,13 +33,13 @@ module.exports = {
       },
     },
     `gatsby-plugin-gatsby-cloud`,
-    {
-      resolve: `gatsby-plugin-google-fonts`,
-      options: {
-        fonts: [`Merriweather`],
-        display: "Budapest, Frankel Leó út 18, 1027 Magyarország",
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-google-fonts`,
+    //   options: {
+    //     fonts: [`Merriweather`],
+    //     display: 'swap',
+    //   },
+    // },
 
     {
       resolve: "gatsby-plugin-react-svg",

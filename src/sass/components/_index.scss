@@ -1,12 +1,11 @@
 @import "../base/_defaults";
 
 .index__text_background {
-  background: color(gray);
-  opacity: 0.8;
+  background: color(gray, secondary);
   //   font-size: 30px;
   display: inline;
   //   color: white;
-  line-height: 1.9;
-  padding: 0.9rem 1rem;
+  line-height: 46px;
+  padding: 8px 16px;
   box-decoration-break: clone;
 }
