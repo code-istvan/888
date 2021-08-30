@@ -25,25 +25,17 @@ const IndexPage = () => (
             lelki egészség elérésében és megőrzésében, áldásos hatásai ma már
             minden kétségen felül bizonyítottak.
           </h4>{" "}
-          {/* <div className="d-grid gap-2"> */}
           <br /> <br />
           <Button variant="primary" href="/rolunk">
             Tudj meg többet rólunk
           </Button>
-          {/* </div> */}
         </Col>
-        {/* <Col md> */}{" "}
-        {/* <StaticImage
-            src="../images/md2.jpg"
-            width={220}
-            layout="fullWidth"
-            loading="eager"
-            quality={95}
-            formats={["AUTO", "WEBP", "AVIF"]}
-            alt="Jóga és vegánság"
-            placeholder="blurred"
-          /> */}
-        {/* </Col> */}
+      </Row>
+      <br /> <br />
+      <Row>
+        <Col>
+          <h3 align="left">Aktív projektjeink</h3>
+        </Col>
       </Row>
     </Container>
   </Layout>

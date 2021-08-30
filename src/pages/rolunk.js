@@ -1,5 +1,4 @@
 import React from "react"
-import "../sass/components/_rolunk.scss"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { Row, Col } from "react-bootstrap"
@@ -7,6 +6,7 @@ import Card from "react-bootstrap/Card"
 import ListGroup from "react-bootstrap/ListGroup"
 import Container from "react-bootstrap/Container"
 import { Link } from "gatsby"
+import "../sass/components/_rolunk.scss"
 
 export default function Rolunk() {
   return (
