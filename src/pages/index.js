@@ -42,7 +42,7 @@ const IndexPage = () => (
         <Col md>
           <div class="card">
             <h5 class="card-header">
-              Eddie Stern: One Simple Thing - könyvének magyar kiadása
+              Eddie Stern: One Simple Thing - könyv magyar kiadás
             </h5>
             <div class="card-body">
               <blockquote class="blockquote mb-0">
@@ -73,30 +73,25 @@ const IndexPage = () => (
         <Col md>
           <div class="card">
             <h5 class="card-header">
-              Swami Prabhavananda: How to know God - könyvének magyar kiadása
+              Swami Prabhavananda: How to know God - könyv magyar kiadás
             </h5>
             <div class="card-body">
-              <blockquote class="blockquote mb-0">
-                <p>
-                  Patandzsali Jóga Aforizmái a jóga és a meditáció gyakorlásának
-                  egyik fő munkája. Ezeken az ősi aforizmákon keresztül
-                  megtudhatja, hogyan irányíthatja elméjét, és hogyan érheti el
-                  a belső békét és szabadságot.
-                </p>
-                <footer class="blockquote-footer">
-                  Someone famous in{" "}
-                  <cite title="Source Title">Source Title</cite>
-                  <br /> <br />
-                  <Button variant="primary" href="/projektjeink">
-                    Bővebben
-                  </Button>{" "}
-                  <Button variant="outline-primary" href="/tamogatas">
-                    A projekt támogatása
-                  </Button>
-                </footer>
-              </blockquote>
+              <p class="card-text">
+                {" "}
+                Patandzsali Jóga Aforizmái a jóga és a meditáció gyakorlásának
+                egyik fő munkája. Ezeken az ősi aforizmákon keresztül
+                megtudhatja, hogyan irányíthatja elméjét, és hogyan érheti el a
+                belső békét és szabadságot.
+              </p>
+              <Button variant="primary" href="/projektjeink">
+                Bővebben
+              </Button>{" "}
+              <Button variant="outline-primary" href="/tamogatas">
+                A projekt támogatása
+              </Button>
             </div>
           </div>
+          <br /> <br />
         </Col>
       </Row>
       <br /> <br />
