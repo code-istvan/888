@@ -208,7 +208,7 @@ export default function Projektjeink() {
                           <p>
                             Eddie Stern legújabb{" "}
                             <Link
-                              href="https://eddiestern.com/one-simple-thing/"
+                              href="https://www.bookdepository.com/One-Simple-Thing/9780865478398"
                               target="_blank"
                             >
                               könyve
