@@ -32,7 +32,7 @@ export default function Tamogatas() {
 
         <Row>
           <Col>
-            <div class="card">
+            <div class="card tamogatas__cardHover">
               <div class="card-body">
                 <h4 class="card-title">Adó 1%</h4>
                 <p class="card-text">
@@ -96,7 +96,7 @@ export default function Tamogatas() {
         <br />
         <Row>
           <Col>
-            <div class="card">
+            <div class="card tamogatas__cardHover">
               <div class="card-body">
                 <h4 class="card-title">Projektámogatás</h4>
                 <p class="card-text">
@@ -338,7 +338,7 @@ export default function Tamogatas() {
         <br />
         <Row>
           <Col>
-            <div class="card">
+            <div class="card tamogatas__cardHover">
               <div class="card-body">
                 <h4 class="card-title">Jelentkezz önkéntesnek!</h4>
                 <p class="card-text">

@@ -40,7 +40,7 @@ const IndexPage = () => (
       <br />
       <Row>
         <Col md>
-          <div class="card">
+          <div class="card index__cardHover">
             <h5 class="card-header">
               Eddie Stern: One Simple Thing - könyv magyar kiadás
             </h5>
@@ -71,7 +71,7 @@ const IndexPage = () => (
           </div>
         </Col>
         <Col md>
-          <div class="card">
+          <div class="card index__cardHover">
             <h5 class="card-header">
               Swami Prabhavananda: How to know God - könyv magyar kiadás
             </h5>
