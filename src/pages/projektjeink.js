@@ -252,7 +252,7 @@ export default function Projektjeink() {
                 <p class="card-text">
                   {" "}
                   Patandzsali Jóga Aforizmái a jóga és a meditáció gyakorlásának
-                  egyik fő munkája. Ezeken az ősi aforizmákon keresztül
+                  egyik fő munkája. Ezeken az ősi aforizmákon keresztül a kereső
                   megtudhatja, hogyan irányíthatja elméjét, és hogyan érheti el
                   a belső békét és szabadságot.
                 </p>
@@ -264,7 +264,18 @@ export default function Projektjeink() {
                     A projekt támogatása
                   </Button>
                   <Accordion.Collapse eventKey="0">
-                    <p className="text_align_justify margin-top20">TESZT</p>
+                    <p className="text_align_justify margin-top20">
+                      Nagy megtiszteltetés számunkra, hogy a{" "}
+                      <Link
+                        href="https://sharathyogacentre.com"
+                        target="_blank"
+                      >
+                        Mysore-i Astanga main shala
+                      </Link>{" "}
+                      - legfőbb iskola - oktatási anyagát is képző, nagyszerű
+                      jógaelméleti könyv alapítványunk gondozásában jelenhet
+                      meg.{" "}
+                    </p>
                   </Accordion.Collapse>
                 </Accordion>
               </div>
@@ -288,17 +299,17 @@ export default function Projektjeink() {
               <div class="card-body">
                 <p class="card-text">
                   {" "}
-                  Patandzsali Jóga Aforizmái a jóga és a meditáció gyakorlásának
-                  egyik fő munkája. Ezeken az ősi aforizmákon keresztül
-                  megtudhatja, hogyan irányíthatja elméjét, és hogyan érheti el
-                  a belső békét és szabadságot.
+                  A Jóga és a Vegánság könyvében Sharon Gannon, a híres
+                  Jivamukti jóga rendszer megalkotója összefoglalja a jóga, a
+                  fizikai egészség, a környezetvédelem és az állatvédelem
+                  metszéspontjait.
                 </p>
                 <Accordion>
                   <Accordion.Toggle as={Button} variant="primary" eventKey="0">
                     Bővebben
                   </Accordion.Toggle>{" "}
                   <Accordion.Collapse eventKey="0">
-                    <p className="text_align_justify margin-top20">TESZT</p>
+                    <p className="text_align_justify margin-top20">Hamarosan</p>
                   </Accordion.Collapse>
                 </Accordion>
               </div>
