@@ -1,5 +1,4 @@
 import React, { useState } from "react"
-import "bootstrap/dist/css/bootstrap.min.css"
 import { Link } from "gatsby"
 import { Row, Col } from "react-bootstrap"
 import Modal from "react-bootstrap/Modal"
@@ -39,14 +38,14 @@ export default function Footer() {
         </Col>
         <Col sm>
           <h6>IRATKOZZ FEL HÍRLEVELÜNKRE</h6>
-          {/* <> */}
           <Button className="footer__button" onClick={handleShow}>
             Feliratkozás
           </Button>
           <br />
           <Modal show={show} onHide={handleClose}>
-            <Modal.Header closeButton>
+            <Modal.Header>
               <Modal.Title>Feliratkozás hírlevélre</Modal.Title>
+              <button className="btn-close" onClick={handleClose}></button>
             </Modal.Header>
             <Modal.Body>
               <p>
@@ -56,7 +55,6 @@ export default function Footer() {
                 címét.
               </p>
               <br />
-
               <form
                 onSubmit="submit"
                 name="newsletter"
@@ -78,7 +76,6 @@ export default function Footer() {
                     required
                   />{" "}
                 </div>
-
                 <div className="d-grid gap-2">
                   <Button
                     className="footer__button-feliratkozas__modal__button"
@@ -96,7 +93,6 @@ export default function Footer() {
               </form>
             </Modal.Body>
           </Modal>
-          {/* </> */}
         </Col>
         <Col sm>
           <h6>ADATVÉDELEM</h6>
