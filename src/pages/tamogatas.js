@@ -56,8 +56,8 @@ export default function Tamogatas() {
                       több emberhez eljuttathassuk ezt a nagyszerű tudomány. Ha
                       az 1% százalékodat a Nyolcágú Jóga Alapítványnak
                       működtetésére vagy projektjeinek támogatására kívánod
-                      felajánlani (lásd a
-                      <Link href="/projektjeink"> projektjeink</Link>{" "}
+                      felajánlani (lásd a{" "}
+                      <Link href="/projektjeink">projektjeink</Link>{" "}
                       menüpontban), a személyi jövedelemadó bevallásodban a
                       Nyolcágú Jóga Alapítvány adószámát tüntesd fel.
                       <br />
@@ -171,7 +171,7 @@ export default function Tamogatas() {
                               hogy készpénzzel történő csekkbefizetés kapcsán
                               2018. január 1-től változtak a szabályok. Az
                               esetlegesen elkért személyes adatokat kizárólag a
-                              posta kezeli! Ezen a
+                              posta kezeli! Ezen a{" "}
                               <Link
                                 href="https://www.posta.hu/csekkbefizetes_keszpenzzel_valtozo_szabalyok_2018"
                                 target="_blank"
@@ -342,8 +342,10 @@ export default function Tamogatas() {
               <div class="card-body">
                 <h4 class="card-title">Jelentkezz önkéntesnek!</h4>
                 <p class="card-text">
-                  With supporting text below as a natural lead-in to additional
-                  content.
+                  Az jóga már évezredek óta segíti az embereket a testi és lelki
+                  egészség elérésében és megőrzésében. Önkéntesként te is
+                  részese lehetsz eme nagyszerű folyamat széles körű
+                  népszerűsítésében.
                 </p>
                 <Accordion>
                   <Accordion.Toggle as={Button} variant="primary" eventKey="0">
