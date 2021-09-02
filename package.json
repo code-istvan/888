@@ -6,7 +6,7 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "bootstrap": "^5.0.2",
-    "gatsby": "^3.10.2",
+    "gatsby": "^3.13.0",
     "gatsby-image": "^3.10.0",
     "gatsby-plugin-gatsby-cloud": "^2.10.0",
     "gatsby-plugin-google-fonts": "^1.0.1",
@@ -19,7 +19,7 @@
     "gatsby-plugin-react-leaflet": "^3.0.2",
     "gatsby-plugin-react-svg": "^3.0.1",
     "gatsby-plugin-sass": "^4.10.0",
-    "gatsby-plugin-sharp": "^3.10.2",
+    "gatsby-plugin-sharp": "^3.13.0",
     "gatsby-source-filesystem": "^3.10.0",
     "gatsby-source-googlemaps-geocoding": "^1.0.0",
     "gatsby-transformer-sharp": "^3.10.0",
