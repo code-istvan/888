@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "array-move": "^4.0.0",
     "bootstrap": "^5.0.2",
     "gatsby": "^3.13.0",
     "gatsby-image": "^3.10.0",
