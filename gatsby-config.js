@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Nyolcágú Jóga Alapítvány`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Tegyük jobbá a világot jógával`,
     author: `@omworks`,
     siteUrl: `https://lucid-meninsky-96389d.netlify.app`,
   },
@@ -49,6 +49,8 @@ module.exports = {
         },
       },
     },
+
+    "gatsby-plugin-netlify-cms",
 
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
