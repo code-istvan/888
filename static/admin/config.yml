@@ -1,8 +1,8 @@
 backend:
   name: git-gateway
-  repo: code-istvan/888
+  # repo: code-istvan/888
   branch: master
-  site_domain: https://lucid-meninsky-96389d.netlify.app
+  # site_domain: https://lucid-meninsky-96389d.netlify.app
 
 media_folder: "static/img"
 public_folder: "/img"
