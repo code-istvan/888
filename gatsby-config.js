@@ -9,7 +9,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sass`,
-    "gatsby-plugin-netlify-cms",
+    // "gatsby-plugin-netlify-cms",
 
     {
       resolve: `gatsby-source-filesystem`,
