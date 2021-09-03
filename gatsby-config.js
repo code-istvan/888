@@ -4,6 +4,9 @@ module.exports = {
     description: `Tegyük jobbá a világot jógával`,
     author: `@omworks`,
     siteUrl: `https://lucid-meninsky-96389d.netlify.app`,
+    social: {
+      facebook: `nyolcag`,
+    },
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -15,6 +18,13 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+
+    {
+      resolve: `gatsby-plugin-mdx`,
+      option: {
+        extensions: [`.mdx`, `md`],
       },
     },
 
