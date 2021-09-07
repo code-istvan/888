@@ -18,13 +18,13 @@ const IndexPage = () => (
       <Row>
         <Col md>
           <h1 align="left">Nyolcágú jóga alapítvány</h1>
-          <h4 className="index__text_background" align="left">
+          <p className="index__text_background index__leadText" align="left">
             Alapítványunk célja, hogy a jóga elméletét és gyakorlatát minél
             szélesebb körben népszerűsítse Magyarországon. Az Indiából
             eredeztethető jóga már évezredek óta segíti az embereket a testi és
             lelki egészség elérésében és megőrzésében, áldásos hatásai ma már
             minden kétségen felül bizonyítottak.
-          </h4>{" "}
+          </p>{" "}
           <br /> <br />
           <Button variant="primary" href="/rolunk">
             Tudj meg többet rólunk
