@@ -3,7 +3,7 @@ module.exports = {
     title: `Nyolcágú Jóga Alapítvány`,
     description: `Tegyük jobbá a világot jógával`,
     author: `@omworks`,
-    siteUrl: `https://lucid-meninsky-96389d.netlify.app`,
+    siteUrl: `http://localhost:8000/`,
     social: {
       facebook: `nyolcag`,
     },
@@ -12,11 +12,18 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sass`,
-    `gatsby-plugin-mdx`,
+
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: [`.mdx`, `.md`],
+      },
+    },
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/content/blog`,
+        path: `${__dirname}/blog`,
         name: `blog`,
       },
     },
