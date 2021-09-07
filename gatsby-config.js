@@ -12,11 +12,11 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sass`,
-
+    `gatsby-plugin-mdx`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/blog`,
+        path: `${__dirname}/src/content/blog/`,
         name: `blog`,
       },
     },
@@ -26,13 +26,6 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
-      },
-    },
-
-    {
-      resolve: `gatsby-plugin-mdx`,
-      option: {
-        extensions: [`.mdx`, `.md`],
       },
     },
 
