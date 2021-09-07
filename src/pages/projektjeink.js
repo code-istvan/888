@@ -10,6 +10,7 @@ import Accordion from "react-bootstrap/Accordion"
 // import { StaticImage } from "gatsby-plugin-image"
 // import Image from "react-bootstrap/Image"
 import "../sass/components/_projektjeink.scss"
+import "../sass/components/card-hover.scss"
 
 export default function Projektjeink() {
   return (
@@ -26,7 +27,7 @@ export default function Projektjeink() {
         <br />
         <Row>
           <Col>
-            <div class="card projektjeink__cardHover">
+            <div class="card card-hover">
               <h5 class="card-header">
                 Eddie Stern: One Simple Thing - könyv magyar kiadás
               </h5>
@@ -97,7 +98,7 @@ export default function Projektjeink() {
         <br />
         <Row>
           <Col>
-            <div class="card projektjeink__cardHover">
+            <div class="card card-hover">
               <h5 class="card-header">
                 Swami Prabhavananda: How to know God - könyv magyar kiadás
               </h5>
@@ -145,7 +146,7 @@ export default function Projektjeink() {
         <br />
         <Row>
           <Col>
-            <div class="card projektjeink__cardHover">
+            <div class="card card-hover">
               <h5 class="card-header">
                 Sharon Gannon: Yoga and Veganism - könyv magyar kiadás
               </h5>

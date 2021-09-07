@@ -12,6 +12,7 @@ import MyPDF2 from "../pdfs/8ag_szamlaszam.pdf"
 import Accordion from "react-bootstrap/Accordion"
 // import facebook from "..//images/facebook.svg"
 import "../sass/components/_tamogatas.scss"
+import "../sass/components/card-hover.scss"
 
 export default function Tamogatas() {
   return (
@@ -32,7 +33,7 @@ export default function Tamogatas() {
 
         <Row>
           <Col>
-            <div class="card tamogatas__cardHover">
+            <div class="card card-hover">
               <div class="card-body">
                 <h4 class="card-title">Adó 1%</h4>
                 <p class="card-text">
@@ -96,7 +97,7 @@ export default function Tamogatas() {
         <br />
         <Row>
           <Col>
-            <div class="card tamogatas__cardHover">
+            <div class="card card-hover">
               <div class="card-body">
                 <h4 class="card-title">Projektámogatás</h4>
                 <p class="card-text">
@@ -338,7 +339,7 @@ export default function Tamogatas() {
         <br />
         <Row>
           <Col>
-            <div class="card tamogatas__cardHover">
+            <div class="card card-hover">
               <div class="card-body">
                 <h4 class="card-title">Jelentkezz önkéntesnek!</h4>
                 <p class="card-text">

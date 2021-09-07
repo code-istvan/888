@@ -6,6 +6,7 @@ import Container from "react-bootstrap/Container"
 import { Row, Col } from "react-bootstrap"
 import Button from "react-bootstrap/Button"
 import "../sass/components/_index.scss"
+import "../sass/components/card-hover.scss"
 // import { navigate } from "gatsby"
 // import { StaticImage } from "gatsby-plugin-image"
 
@@ -40,7 +41,7 @@ const IndexPage = () => (
       <br />
       <Row>
         <Col md>
-          <div class="card index__cardHover">
+          <div class="card card-hover">
             <h5 class="card-header">
               Eddie Stern: One Simple Thing - könyv magyar kiadás
             </h5>
@@ -71,7 +72,7 @@ const IndexPage = () => (
           </div>
         </Col>
         <Col md>
-          <div class="card index__cardHover">
+          <div class="card card-hover">
             <h5 class="card-header">
               Swami Prabhavananda: How to know God - könyv magyar kiadás
             </h5>

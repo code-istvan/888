@@ -7,6 +7,7 @@ import ListGroup from "react-bootstrap/ListGroup"
 import Container from "react-bootstrap/Container"
 import { Link } from "gatsby"
 import "../sass/components/_rolunk.scss"
+import "../sass/components/card-hover.scss"
 
 export default function Rolunk() {
   return (
@@ -80,7 +81,7 @@ export default function Rolunk() {
         <hr />
         <Row>
           <Col md={4}>
-            <Card className="rolunk__cardHover">
+            <Card className="card-hover">
               <Card.Header>
                 <b>Alapítás éve</b>
               </Card.Header>
@@ -90,7 +91,7 @@ export default function Rolunk() {
             </Card>
           </Col>
           <Col md={4}>
-            <Card className="rolunk__cardHover">
+            <Card className="card-hover">
               <Card.Header>
                 <b>Adószám</b>
               </Card.Header>
@@ -100,7 +101,7 @@ export default function Rolunk() {
             </Card>
           </Col>
           <Col md={4}>
-            <Card className="rolunk__cardHover">
+            <Card className="card-hover">
               <Card.Header>
                 <b>Nyilvántartási szám</b>
               </Card.Header>
@@ -112,7 +113,7 @@ export default function Rolunk() {
         </Row>
         <Row className="justify-content-md-center">
           <Col md={4}>
-            <Card className="rolunk__cardHover">
+            <Card className="card-hover">
               <Card.Header>
                 <b>Székhely</b>
               </Card.Header>
@@ -124,7 +125,7 @@ export default function Rolunk() {
             </Card>
           </Col>
           <Col md={4}>
-            <Card className="rolunk__cardHover">
+            <Card className="card-hover">
               <Card.Header>
                 <b>IBAN / SWIFT</b>
               </Card.Header>
@@ -138,7 +139,7 @@ export default function Rolunk() {
             </Card>
           </Col>
           <Col md={4}>
-            <Card className="rolunk__cardHover">
+            <Card className="card-hover">
               <Card.Header>
                 <b>Bankszámlaszám</b>
               </Card.Header>
@@ -154,7 +155,7 @@ export default function Rolunk() {
         </Row>
         <Row className="justify-content-md-center">
           <Col md={4}>
-            <Card className="rolunk__cardHover">
+            <Card className="card-hover">
               <Card.Header>
                 <b>A kuratórium elnöke</b>
               </Card.Header>
@@ -177,7 +178,7 @@ export default function Rolunk() {
             </Card>
           </Col>
           <Col md={4}>
-            <Card className="rolunk__cardHover">
+            <Card className="card-hover">
               <Card.Header>
                 <b>Kuratóriumi tag</b>
               </Card.Header>
@@ -195,7 +196,7 @@ export default function Rolunk() {
             </Card>
           </Col>
           <Col md={4}>
-            <Card className="rolunk__cardHover">
+            <Card className="card-hover">
               <Card.Header>
                 <b>Kuratóriumi tag</b>
               </Card.Header>
@@ -216,7 +217,7 @@ export default function Rolunk() {
         <br />
         <Row className="justify-content-md-center">
           <Col md={4}>
-            <Card className="rolunk__cardHover">
+            <Card className="card-hover">
               <Card.Header>
                 <b>Alapítványunk jogásza</b>
               </Card.Header>
