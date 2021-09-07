@@ -24,6 +24,7 @@
     "gatsby-plugin-sharp": "^3.13.0",
     "gatsby-source-filesystem": "^3.13.0",
     "gatsby-source-googlemaps-geocoding": "^1.0.0",
+    "gatsby-transformer-remark": "^4.10.0",
     "gatsby-transformer-sharp": "^3.10.0",
     "node-sass": "^6.0.1",
     "prop-types": "^15.7.2",
@@ -32,6 +33,7 @@
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
     "react-leaflet": "^3.2.1",
+    "tar": "^6.1.11",
     "tippy.js": "^6.3.1",
     "trim": "0.0.3",
     "use-has-mounted": "^1.0.5"
