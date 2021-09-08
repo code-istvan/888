@@ -27,12 +27,12 @@ export default function Projektjeink() {
         <br />
         <Row>
           <Col>
-            <div class="card card-hover">
-              <h5 class="card-header">
+            <div className="card card-hover">
+              <h5 className="card-header">
                 Eddie Stern: One Simple Thing - könyv magyar kiadás
               </h5>
-              <div class="card-body">
-                <blockquote class="blockquote mb-0">
+              <div className="card-body">
+                <blockquote className="blockquote mb-0">
                   <p>
                     Érezni lehet, hogy az együttérzés átragyogja ennek a
                     könyvnek minden oldalát. Eddie Stern őszinte vágya, hogy
@@ -40,7 +40,7 @@ export default function Projektjeink() {
                     békésebbek legyünk az életünkben, a jóga tudományának és az
                     évezredes tapasztalat által.
                   </p>
-                  <footer class="blockquote-footer">
+                  <footer className="blockquote-footer">
                     Sharon Salyberger,{" "}
                     <cite title="Source Title">
                       a Lovingkindness és a Real Happiness könyvek szerzője
