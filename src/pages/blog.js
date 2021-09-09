@@ -14,40 +14,41 @@ const Blog = ({ data }) => {
   return (
     <Layout>
       <Seo title="Blog" />
-      <Row>
-        <Col>
-          <h1>BLOG</h1>
-        </Col>
-      </Row>
 
-      <Row>
-        {posts.map(post => {
-          const title = post.frontmatter.title
+      <Container>
+        <Row>
+          <Col>
+            <h1>BLOG</h1>
+          </Col>
+        </Row>
 
-          return (
-            <Col md={4}>
-              <div className="card">
-                <Image
-                  src={post.frontmatter.thumbnail}
-                  className="blog__thumbnail"
-                  alt={post.frontmatter.title}
-                />
-                <div className="card-body">
-                  <h5 className="card-title">{title}</h5>
-                  <p className="card-text">{post.frontmatter.description}</p>
-                  <a href="#" className="btn btn-primary">
-                    Tovább a bejegyzésre
-                  </a>
+        <Row>
+          {posts.map(post => {
+            const title = post.frontmatter.title
+
+            return (
+              <Col md={4}>
+                <div className="card">
+                  <Image
+                    src={post.frontmatter.thumbnail}
+                    className="blog__thumbnail"
+                    alt={post.frontmatter.title}
+                  />
+                  <div className="card-body">
+                    <h5 className="card-title">{title}</h5>
+                    <p className="card-text">{post.frontmatter.description}</p>
+                    <p className="card-text">{post.frontmatter.date}</p>
+                    <a href="#" className="btn btn-primary">
+                      Tovább a bejegyzésre
+                    </a>
+                  </div>
                 </div>
-                <div className="card-footer text-muted">
-                  {post.frontmatter.date}
-                </div>
-              </div>
-              <br />
-            </Col>
-          )
-        })}
-      </Row>
+                <br />
+              </Col>
+            )
+          })}
+        </Row>
+      </Container>
     </Layout>
   )
 }
@@ -61,7 +62,7 @@ export const pageQuery = graphql`
         excerpt
         slug
         frontmatter {
-          date(formatString: "YYYY MMMM DD")
+          date(formatString: "YYYY. MM. DD.")
           description
           title
           thumbnail
