@@ -3,7 +3,7 @@ module.exports = {
     title: `Nyolcágú Jóga Alapítvány`,
     description: `Tegyük jobbá a világot jógával`,
     author: `@omworks`,
-    siteUrl: `http://localhost:8000/`,
+    siteUrl: `https://lucid-meninsky-96389d.netlify.app`,
     social: {
       facebook: `nyolcag`,
     },

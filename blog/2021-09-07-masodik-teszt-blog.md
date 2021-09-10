@@ -1,11 +1,11 @@
 ---
-title: Második teszt blog
+published: true
+title: Masodik teszt blog
 description: Igen igen ez már a második
 tags:
   - masodik
 date: 2021-09-07T13:49:42.937Z
 thumbnail: /images/uploads/blog.jpg
-published: true
 ---
 
 dwedwedewwe
