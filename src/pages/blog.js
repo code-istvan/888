@@ -7,6 +7,7 @@ import Seo from "../components/seo"
 import Image from "react-bootstrap/Image"
 import "../sass/components/card-hover.scss"
 import "../sass/components/_blog.scss"
+import "../sass/components/card-hover.scss"
 
 const Blog = ({ data }) => {
   const posts = data.allMdx.nodes
@@ -24,11 +25,11 @@ const Blog = ({ data }) => {
 
         <Row>
           {posts.map(post => {
-            const title = post.frontmatter.title
+            const title = post.frontmatter.title || post.fields.slug
 
             return (
               <Col md={4}>
-                <div className="card">
+                <div className="card card-hover" key={post.slug}>
                   <Image
                     src={post.frontmatter.thumbnail}
                     className="blog__thumbnail"
@@ -38,7 +39,7 @@ const Blog = ({ data }) => {
                     <h5 className="card-title">{title}</h5>
                     <p className="card-text">{post.frontmatter.description}</p>
                     <p className="card-text">{post.frontmatter.date}</p>
-                    <a href="#" className="btn btn-primary">
+                    <a href={post.slug} className="btn btn-primary">
                       Tovább a bejegyzésre
                     </a>
                   </div>
