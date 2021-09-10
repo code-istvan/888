@@ -3,10 +3,11 @@ import { MDXRenderer } from "gatsby-plugin-mdx"
 import React from "react"
 import { Row, Col } from "react-bootstrap"
 import Container from "react-bootstrap/Container"
+import Button from "react-bootstrap/Button"
 
 const blogPosts = ({ data, pageContext }) => {
   const { frontmatter, body } = data.mdx
-  const { previous, next } = pageContext
+  // const { previous, next } = pageContext
 
   return (
     <Container>
@@ -14,29 +15,17 @@ const blogPosts = ({ data, pageContext }) => {
         <Col>
           <h1>{frontmatter.title}</h1>
           <p>{frontmatter.date}</p>
-
+          <img
+            src={frontmatter.thumbnail}
+            // className="blog__thumbnail"
+            alt={frontmatter.title}
+          />
           <article>
             <MDXRenderer>{body}</MDXRenderer>
           </article>
-
-          {previous === false ? null : (
-            <>
-              {previous && (
-                <Link to={previous.fields.slug}>
-                  <button>{previous.frontmatter.title}</button>
-                </Link>
-              )}
-            </>
-          )}
-          {next === false ? null : (
-            <>
-              {next && (
-                <Link to={next.fields.slug}>
-                  <button>{next.frontmatter.title}</button>
-                </Link>
-              )}
-            </>
-          )}
+          <Button variant="primary" href="/blog">
+            Vissza
+          </Button>
         </Col>
       </Row>
     </Container>
@@ -52,6 +41,7 @@ export const query = graphql`
       frontmatter {
         title
         date(formatString: "YYYY. MM. DD.")
+        thumbnail
       }
     }
   }
