@@ -19,8 +19,7 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     extension: ".md"
     format: frontmatter
-    fields: # The fields for each document, usually in front matter
-      # - { label: Slug, name: slug, required: true, widget: string }
+    fields: # The fields for each document, usually in front matter # - { label: Slug, name: slug, required: true, widget: string }
       - {
           label: "Published",
           name: "published",
