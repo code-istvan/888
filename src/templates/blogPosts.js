@@ -6,7 +6,6 @@ import Container from "react-bootstrap/Container"
 import Button from "react-bootstrap/Button"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import { GatsbyImage } from "gatsby-plugin-image"
 import "../sass/components/_blogposts.scss"
 
 const blogPosts = ({ data }) => {

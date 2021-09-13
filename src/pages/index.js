@@ -98,8 +98,9 @@ const IndexPage = () => (
       <br /> <br />
       <br />
       <Row>
-        <Col>
+        <Col className="index__same-line">
           <h3 align="left">Blogunk</h3>
+          <p> legújabb bejegyzések</p>
         </Col>
       </Row>
     </Container>
