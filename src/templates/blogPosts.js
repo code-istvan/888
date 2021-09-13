@@ -14,7 +14,7 @@ const blogPosts = ({ data }) => {
   return (
     <Layout>
       <Container>
-        <Seo title="Blog" />
+        <Seo title={frontmatter.title} description={frontmatter.description} />
         <Row>
           <Col></Col>
           <Col xs={10}>
@@ -44,6 +44,7 @@ export const query = graphql`
       body
       frontmatter {
         title
+        description
         date(formatString: "YYYY. MM. DD.")
         thumbnail
       }
