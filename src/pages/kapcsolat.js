@@ -15,6 +15,11 @@ export default function Kapcsolat() {
           <h1>Kapcsolat</h1>
         </Col>
       </Row>
+      <Row>
+        <Col>
+          <p>Lépj velünk kapcsolatba:</p>
+        </Col>
+      </Row>
       <form
         className="kapcsolat__inputfield"
         name="contact 8ag"

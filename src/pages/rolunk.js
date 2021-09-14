@@ -86,7 +86,9 @@ export default function Rolunk() {
                 <b>Alapítás éve</b>
               </Card.Header>
               <ListGroup variant="flush" className="rolunk__card__padding">
-                <ListGroup.Item>2015.</ListGroup.Item>
+                <ListGroup.Item>
+                  <p>2015.</p>
+                </ListGroup.Item>
               </ListGroup>
             </Card>
           </Col>
@@ -96,7 +98,9 @@ export default function Rolunk() {
                 <b>Adószám</b>
               </Card.Header>
               <ListGroup variant="flush" className="rolunk__card__padding">
-                <ListGroup.Item>18734373-1-41</ListGroup.Item>
+                <ListGroup.Item>
+                  <p>18734373-1-41</p>
+                </ListGroup.Item>
               </ListGroup>
             </Card>
           </Col>
@@ -106,7 +110,9 @@ export default function Rolunk() {
                 <b>Nyilvántartási szám</b>
               </Card.Header>
               <ListGroup variant="flush" className="rolunk__card__padding">
-                <ListGroup.Item>01-09-879437</ListGroup.Item>
+                <ListGroup.Item>
+                  <p>01-09-879437</p>
+                </ListGroup.Item>
               </ListGroup>
             </Card>
           </Col>
@@ -119,7 +125,8 @@ export default function Rolunk() {
               </Card.Header>
               <ListGroup variant="flush" className="rolunk__card__padding">
                 <ListGroup.Item>
-                  1132. Budapest <br /> Visegrádi u. 80/A 8/2.
+                  <p>1132. Budapest</p>
+                  <p>Visegrádi u. 80/A 8/2.</p>
                 </ListGroup.Item>
               </ListGroup>
             </Card>
@@ -131,9 +138,8 @@ export default function Rolunk() {
               </Card.Header>
               <ListGroup variant="flush" className="rolunk__card__padding">
                 <ListGroup.Item>
-                  HU81-10103104-54928200-01004009
-                  <br />
-                  BUDAHUHB
+                  <p>HU81-10103104-54928200-01004009</p>
+                  <p>BUDAHUHB</p>
                 </ListGroup.Item>
               </ListGroup>
             </Card>
@@ -145,9 +151,8 @@ export default function Rolunk() {
               </Card.Header>
               <ListGroup variant="flush" className="rolunk__card__padding">
                 <ListGroup.Item>
-                  Budapest Bank
-                  <br />
-                  10103104-54928200-01004009
+                  <p>Budapest Bank</p>
+                  <p>10103104-54928200-01004009</p>
                 </ListGroup.Item>
               </ListGroup>
             </Card>
@@ -165,13 +170,11 @@ export default function Rolunk() {
                     href="https://bandhaworks.hu/pages/team/team-member/szalai-istvan/"
                     target="_blank"
                   >
-                    Szalai István
+                    <p>Szalai István</p>
                   </Link>
-                  <br />
-                  astanga jóga gyakorló/oktató
-                  <br />
+                  <p>astanga jóga gyakorló/oktató</p>
                   <Link href="https://bandhaworks.hu" target="_blank">
-                    bandhaworks.hu
+                    <p>bandhaworks.hu</p>
                   </Link>
                 </ListGroup.Item>
               </ListGroup>
@@ -184,12 +187,10 @@ export default function Rolunk() {
               </Card.Header>
               <ListGroup variant="flush" className="rolunk__card__padding">
                 <ListGroup.Item>
-                  Krébesz Andrea
-                  <br />
-                  astanga jóga gyakorló/oktató
-                  <br />
+                  <p>Krébesz Andrea</p>
+                  <p>astanga jóga gyakorló/oktató</p>
                   <Link href="https://bandhaworks.hu" target="_blank">
-                    bandhaworks.hu
+                    <p>bandhaworks.hu</p>
                   </Link>
                 </ListGroup.Item>
               </ListGroup>
@@ -202,12 +203,10 @@ export default function Rolunk() {
               </Card.Header>
               <ListGroup variant="flush" className="rolunk__card__padding">
                 <ListGroup.Item>
-                  Bimba András Imre
-                  <br />
-                  astanga jóga gyakorló/oktató
-                  <br />
+                  <p>Bimba András Imre</p>
+                  <p>astanga jóga gyakorló/oktató</p>
                   <Link href="https://bandhaworks.hu" target="_blank">
-                    bandhaworks.hu
+                    <p>bandhaworks.hu</p>
                   </Link>
                 </ListGroup.Item>
               </ListGroup>
@@ -223,12 +222,10 @@ export default function Rolunk() {
               </Card.Header>
               <ListGroup variant="flush" className="rolunk__card__padding">
                 <ListGroup.Item>
-                  Dr. Kővári Zsuzsa
-                  <br />
-                  astanga jóga gyakorló
-                  <br />
+                  <p>Dr. Kővári Zsuzsa</p>
+                  <p>astanga jóga gyakorló</p>
                   <Link href="https://bandhaworks.hu" target="_blank">
-                    bandhaworks.hu
+                    <p>bandhaworks.hu</p>
                   </Link>
                 </ListGroup.Item>
               </ListGroup>
