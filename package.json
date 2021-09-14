@@ -26,6 +26,7 @@
     "gatsby-source-googlemaps-geocoding": "^1.0.0",
     "gatsby-transformer-remark": "^4.10.0",
     "gatsby-transformer-sharp": "^3.10.0",
+    "immer": "^9.0.6",
     "node-sass": "^6.0.1",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
