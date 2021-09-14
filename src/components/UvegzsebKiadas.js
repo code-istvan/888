@@ -8,16 +8,16 @@ export default function UvegzsebKiadas() {
         <tr className="firstLineColor">
           <th></th>
           <th>Dátum</th>
-          <th>Név</th>
+          <th>Megnevezés</th>
           <th>Összeg</th>
         </tr>
       </thead>
       <tbody>
         <tr className="secondLineColor">
           <td>1</td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>2021.09.07</td>
+          <td>jogdíj</td>
+          <td>154.479.-</td>
         </tr>
         <tr className="firstLineColor">
           <td>2</td>
