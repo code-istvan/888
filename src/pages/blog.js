@@ -40,7 +40,7 @@ const Blog = ({ data }) => {
                     <p className="card-text">{post.frontmatter.date}</p>
                     <p className="card-text">{post.frontmatter.description}</p>
                     <a href={post.slug} className="btn btn-primary">
-                      Tovább a bejegyzésre
+                      Olvasd tovább
                     </a>
                   </div>
                 </div>
