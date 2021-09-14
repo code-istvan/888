@@ -42,7 +42,8 @@ export default function Footer() {
             Feliratkozás
           </Button>
           <br />
-          <Modal show={show} onHide={handleClose}>
+          {/* <Modal show={show} onHide={handleClose}> */}
+          <Modal show={show}>
             <Modal.Header>
               <Modal.Title>Feliratkozás hírlevélre</Modal.Title>
               <button className="btn-close" onClick={handleClose}></button>
