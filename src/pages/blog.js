@@ -28,7 +28,7 @@ const Blog = ({ data }) => {
             const title = post.frontmatter.title || post.fields.slug
 
             return (
-              <Col md={4}>
+              <Col md={6} lg={4}>
                 <div className="card card-hover" key={post.slug}>
                   <Image
                     src={post.frontmatter.thumbnail}

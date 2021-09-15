@@ -33,7 +33,7 @@ export default function Kapcsolat() {
           <input name="bot-field" />
         </div>
         <Row>
-          <Col sm={6}>
+          <Col md={6}>
             <input type="text" name="name" placeholder="Név" required />
             <br />
             <input
@@ -44,7 +44,7 @@ export default function Kapcsolat() {
               required
             />
           </Col>
-          <Col sm={6}>
+          <Col md={6}>
             <textarea
               name="comments"
               rows="2"

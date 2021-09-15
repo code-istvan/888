@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Nyolcágú Jóga Alapítvány`,
-    description: `Tegyük jobbá a világot jógával`,
+    description: `Alapítványunk célja, hogy a jóga elméletét és gyakorlatát minél szélesebb körben népszerűsítse Magyarországon. Az Indiából eredeztethető jóga már évezredek óta segíti az embereket a testi és lelki egészség elérésében és megőrzésében, áldásos hatásai ma már minden kétségen felül bizonyítottak.`,
     author: `@omworks`,
     siteUrl: `https://lucid-meninsky-96389d.netlify.app`,
     social: {
@@ -37,6 +37,8 @@ module.exports = {
     },
 
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-sitemap`,
+    "gatsby-plugin-robots-txt",
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,

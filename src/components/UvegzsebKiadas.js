@@ -16,7 +16,7 @@ export default function UvegzsebKiadas() {
         <tr className="secondLineColor">
           <td>1</td>
           <td>2021.09.07</td>
-          <td>jogdíj</td>
+          <td>Jogdíj</td>
           <td>154.479.-</td>
         </tr>
         <tr className="firstLineColor">
