@@ -10,11 +10,11 @@ import "../sass/components/_blogposts.scss"
 
 const blogPosts = ({ data }) => {
   const { frontmatter, body } = data.mdx
-
+  const image = frontmatter.thumbnail || '';
   return (
     <Layout>
       <Container>
-        <Seo title={frontmatter.title} description={frontmatter.description} />
+        <Seo title={frontmatter.title} description={frontmatter.description} thumbnail={image} />
         <Row>
           <Col></Col>
           <Col xs={10}>

@@ -28,7 +28,7 @@ exports.createPages = ({ actions, graphql }) => {
     // create page for each mdx node
     posts.forEach(post => {
       createPage({
-        path: post.fields.slug,
+        path: `blog${post.fields.slug}`,
         component: blogPostTemplate,
         context: {
           slug: post.fields.slug,
