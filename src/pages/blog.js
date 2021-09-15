@@ -1,4 +1,4 @@
-import { graphql } from "gatsby"
+import { graphql, Link} from "gatsby"
 import React from "react"
 import { Row, Col } from "react-bootstrap"
 import Container from "react-bootstrap/Container"
@@ -39,9 +39,9 @@ const Blog = ({ data }) => {
                     <h5 className="card-title">{title}</h5>
                     <p className="card-text">{post.frontmatter.date}</p>
                     <p className="card-text">{post.frontmatter.description}</p>
-                    <a href={post.slug} className="btn btn-primary">
+                    <Link to={post.slug} className={"btn btn-primary"}>
                       Olvasd tovább
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <br />
