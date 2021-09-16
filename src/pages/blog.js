@@ -1,4 +1,4 @@
-import { graphql, Link} from "gatsby"
+import { graphql, Link } from "gatsby"
 import React from "react"
 import { Row, Col } from "react-bootstrap"
 import Container from "react-bootstrap/Container"
@@ -8,6 +8,7 @@ import Image from "react-bootstrap/Image"
 import "../sass/components/card-hover.scss"
 import "../sass/components/_blog.scss"
 import "../sass/components/card-hover.scss"
+import { GatsbyImage } from "gatsby-plugin-image"
 
 const Blog = ({ data }) => {
   const posts = data.allMdx.nodes
