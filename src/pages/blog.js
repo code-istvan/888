@@ -5,14 +5,13 @@ import Container from "react-bootstrap/Container"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Image from "react-bootstrap/Image"
+import BlogRoll from "../components/BlogRoll"
 import "../sass/components/card-hover.scss"
 import "../sass/components/_blog.scss"
 import "../sass/components/card-hover.scss"
 import { GatsbyImage } from "gatsby-plugin-image"
 
 const Blog = ({ data }) => {
-  const posts = data.allMdx.nodes
-
   return (
     <Layout>
       <Seo title="Blog" />
@@ -24,52 +23,10 @@ const Blog = ({ data }) => {
           </Col>
         </Row>
 
-        <Row>
-          {posts.map(post => {
-            const title = post.frontmatter.title || post.fields.slug
-
-            return (
-              <Col md={6} lg={4}>
-                <div className="card card-hover" key={post.slug}>
-                  <Image
-                    src={post.frontmatter.thumbnail}
-                    className="blog__thumbnail"
-                    alt={post.frontmatter.title}
-                  />
-                  <div className="card-body">
-                    <h5 className="card-title">{title}</h5>
-                    <p className="card-text">{post.frontmatter.date}</p>
-                    <p className="card-text">{post.frontmatter.description}</p>
-                    <Link to={post.slug} className={"btn btn-primary"}>
-                      Olvasd tovább
-                    </Link>
-                  </div>
-                </div>
-                <br />
-              </Col>
-            )
-          })}
-        </Row>
+        <BlogRoll />
       </Container>
     </Layout>
   )
 }
 
 export default Blog
-
-export const pageQuery = graphql`
-  {
-    allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
-      nodes {
-        excerpt
-        slug
-        frontmatter {
-          date(formatString: "YYYY. MM. DD.")
-          description
-          title
-          thumbnail
-        }
-      }
-    }
-  }
-`

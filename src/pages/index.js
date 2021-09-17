@@ -8,6 +8,7 @@ import Button from "react-bootstrap/Button"
 import "../sass/components/_index.scss"
 import "../sass/components/card-hover.scss"
 import { graphql, useStaticQuery } from "gatsby"
+import BlogRoll from "../components/BlogRoll"
 // import { navigate } from "gatsby"
 // import { StaticImage } from "gatsby-plugin-image"
 
@@ -135,6 +136,7 @@ const IndexPage = () => {
             <p> /legújabb bejegyzések/</p>
           </Col>
         </Row>
+        <BlogRoll count={3} />
       </Container>
     </Layout>
   )
