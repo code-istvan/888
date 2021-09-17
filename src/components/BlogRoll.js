@@ -49,26 +49,4 @@ function BlogRoll({ count }) {
   )
 }
 
-// export const useBlogRoll = () => {
-//     const blogPostList = useStaticQuery(
-//         graphql`
-//         query BlogRoll {
-//             allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
-//               nodes {
-//                 excerpt
-//                 slug
-//                 frontmatter {
-//                   date(formatString: "YYYY. MM. DD.")
-//                   description
-//                   title
-//                   thumbnail
-//                 }
-//               }
-//             }
-//           }
-//         `
-//       );
-//       return blogPostList;
-// };
-
 export default BlogRoll
