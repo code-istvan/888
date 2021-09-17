@@ -136,6 +136,7 @@ const IndexPage = () => {
             <p> /legújabb bejegyzések/</p>
           </Col>
         </Row>
+        <br />
         <BlogRoll count={3} />
       </Container>
     </Layout>
