@@ -353,7 +353,72 @@ export default function Tamogatas() {
                     Bővebben
                   </Accordion.Toggle>{" "}
                   <Accordion.Collapse eventKey="0">
-                    <p className="text_align_justify margin-top20">Hamarosan</p>
+                    <p className="text_align_justify margin-top20">
+                      <form
+                        className="kapcsolat__inputfield"
+                        name="onkentes"
+                        method="post"
+                        data-netlify="true"
+                        onSubmit="submit"
+                        data-netlify-honeypot="bot-field"
+                      >
+                        <input
+                          type="hidden"
+                          name="form-name"
+                          value="onkentes"
+                        />
+                        <div hidden>
+                          <input name="bot-field" />
+                        </div>{" "}
+                        <input
+                          type="text"
+                          placeholder="Ide írd a családneved"
+                          name="csaladnev"
+                          // className="InputMassage"
+                          required
+                        />{" "}
+                        <input
+                          type="text"
+                          placeholder="Ide írd a keresztneved"
+                          name="keresztnev"
+                          required
+                        />{" "}
+                        <input
+                          type="email"
+                          id="email"
+                          placeholder="E-mail címed"
+                          name="email"
+                          required
+                        />{" "}
+                        <select id="pozicio" name="pozicio">
+                          <option value="gafikus">Grafikus</option>
+                          <option value="fordito">Angol fordító</option>
+                          <option value="copywriter">Copywriter</option>
+                          <option value="egyeb">Egyéb</option>
+                          required
+                        </select>{" "}
+                        <textarea
+                          name="message"
+                          className="InputMassage"
+                          placeholder="Egyéb információ amit megosztanál magadról"
+                        ></textarea>
+                        <br />
+                        <br />
+                        <div className="d-grid gap-2">
+                          <Button type="submit">Küldés</Button>
+                        </div>
+                        <br />
+                        <label>
+                          <input type="checkbox" required></input> Megismertem
+                          és elfogadom az{" "}
+                          <Link href="/adatvedelem">
+                            {" "}
+                            Adatvédelmi tájékoztatót
+                          </Link>
+                          , hozzájárulok személyes adataim kezeléséhez
+                        </label>
+                      </form>
+                    </p>
                   </Accordion.Collapse>
                 </Accordion>
               </div>
