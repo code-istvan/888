@@ -372,21 +372,21 @@ export default function Tamogatas() {
                         </div>{" "}
                         <input
                           type="text"
-                          placeholder="Ide írd a családneved"
+                          placeholder="Családnév"
                           name="csaladnev"
                           // className="InputMassage"
                           required
                         />{" "}
                         <input
                           type="text"
-                          placeholder="Ide írd a keresztneved"
+                          placeholder="Keresztnév"
                           name="keresztnev"
                           required
                         />{" "}
                         <input
                           type="email"
                           id="email"
-                          placeholder="E-mail címed"
+                          placeholder="E-mail"
                           name="email"
                           required
                         />{" "}

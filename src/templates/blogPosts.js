@@ -6,6 +6,7 @@ import Container from "react-bootstrap/Container"
 import Button from "react-bootstrap/Button"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import { navigate } from "gatsby"
 import "../sass/components/_blogposts.scss"
 
 const blogPosts = ({ data }) => {
@@ -28,7 +29,8 @@ const blogPosts = ({ data }) => {
             <article>
               <MDXRenderer>{body}</MDXRenderer>
             </article>
-            <Button variant="primary" href="/blog">
+            {/* <Button variant="primary" href="/blog"> */}
+            <Button variant="primary" onClick={() => navigate(-1)}>
               Vissza
             </Button>
             <br /> <br />
