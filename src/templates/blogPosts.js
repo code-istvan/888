@@ -27,12 +27,14 @@ const blogPosts = ({ data }) => {
           <Col></Col>
           <Col xs={10}>
             <h1>{frontmatter.title}</h1>
-            <AuthorIcon />
-            <p>{frontmatter.author}</p>
-            <DateIcon />
-            <p>{frontmatter.date}</p>
-            <TagsIcon />
-            <p>{frontmatter.tags}</p>
+            <div className="blogPosts__same-line">
+              <AuthorIcon />
+              <p>{frontmatter.author}</p>
+              <DateIcon />
+              <p>{frontmatter.date}</p>
+              <TagsIcon />
+              <p>{frontmatter.tags}</p>
+            </div>
             <img src={frontmatter.thumbnail} alt={frontmatter.title} />
             <article>
               <MDXRenderer>{body}</MDXRenderer>
