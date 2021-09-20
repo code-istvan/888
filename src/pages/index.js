@@ -1,5 +1,4 @@
 import * as React from "react"
-import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Container from "react-bootstrap/Container"
@@ -9,6 +8,8 @@ import "../sass/components/_index.scss"
 import "../sass/components/card-hover.scss"
 import { graphql, useStaticQuery } from "gatsby"
 import BlogRoll from "../components/BlogRoll"
+import ActiveProjectOne from "../components/ActiveProjectOne"
+import ActiveProjectTwo from "../components/ActiveProjectTwo"
 // import { navigate } from "gatsby"
 // import { StaticImage } from "gatsby-plugin-image"
 
@@ -67,67 +68,13 @@ const IndexPage = () => {
         <br />
         <Row>
           <Col md>
-            <div className="card card-hover">
-              <h5 className="card-header">
-                Eddie Stern: One Simple Thing - könyv magyar kiadás
-              </h5>
-              <div class="card-body">
-                <blockquote className="blockquote mb-0">
-                  <p>
-                    Érezni lehet, hogy az együttérzés átragyogja ennek a
-                    könyvnek minden oldalát. Eddie Stern őszinte vágya, hogy
-                    mindannyian boldogabbak, egészségesebbek, erősebbek és
-                    békésebbek legyünk az életünkben, a jóga tudományának és az
-                    évezredes tapasztalat által.
-                  </p>
-                  <footer className="blockquote-footer">
-                    Sharon Salyberger,{" "}
-                    <cite title="Source Title">
-                      a Lovingkindness és a Real Happiness könyvek szerzője
-                    </cite>
-                    <br /> <br />
-                    <Button variant="primary" href="/projektjeink">
-                      Bővebben
-                    </Button>{" "}
-                    <Button
-                      variant="outline-primary"
-                      href="/tamogatas"
-                      className="index__button__padding-top"
-                    >
-                      A projekt támogatása
-                    </Button>
-                  </footer>
-                </blockquote>
-              </div>
-            </div>
+            <ActiveProjectOne />
           </Col>
           <Col md>
-            <div className="card card-hover">
-              <h5 className="card-header">
-                Swami Prabhavananda: How to know God - könyv magyar kiadás
-              </h5>
-              <div className="card-body">
-                <p className="card-text">
-                  {" "}
-                  Patandzsali Jóga Aforizmái a jóga és a meditáció gyakorlásának
-                  egyik fő munkája. Ezeken az ősi aforizmákon keresztül
-                  megtudhatja, hogyan irányíthatja elméjét, és hogyan érheti el
-                  a belső békét és szabadságot.
-                </p>
-                <Button variant="primary" href="/projektjeink">
-                  Bővebben
-                </Button>{" "}
-                <Button
-                  variant="outline-primary"
-                  href="/tamogatas"
-                  className="index__button__padding-top"
-                >
-                  A projekt támogatása
-                </Button>
-              </div>
-            </div>
+            <ActiveProjectTwo />
           </Col>
         </Row>
+
         <br />
         <br />
         <Row>

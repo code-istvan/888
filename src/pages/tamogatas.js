@@ -389,18 +389,22 @@ export default function Tamogatas() {
                           placeholder="E-mail"
                           name="email"
                           required
-                        />{" "}
+                        />
+                        <br />
                         <select id="pozicio" name="pozicio">
                           <option value="gafikus">Grafikus</option>
                           <option value="fordito">Angol fordító</option>
                           <option value="copywriter">Copywriter</option>
+                          <option value="palzayat">Pályázatíró</option>
+                          <option value="ugzintezo">Ügyintéző</option>
                           <option value="egyeb">Egyéb</option>
                           required
-                        </select>{" "}
+                        </select>
+                        <br />
                         <textarea
                           name="message"
                           className="InputMassage"
-                          placeholder="Egyéb információ amit megosztanál magadról"
+                          placeholder="Egyéb információ amit megosztanál velünk?"
                         ></textarea>
                         <br />
                         <br />

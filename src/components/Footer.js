@@ -20,8 +20,8 @@ export default function Footer() {
       <Row>
         <Col className="footer__first_block">
           <p>
-            “ Az odaadással végzett astanga gyakorlás által elérhető a fizikai,
-            mentális és lelki boldogság amely a szívünkben lévő szabadsághoz
+            “Az odaadással végzett astanga gyakorlás által elérhető a fizikai,
+            mentális és lelki boldogság, amely a szívünkben lévő szabadsághoz
             vezet.”
           </p>
           <br />
