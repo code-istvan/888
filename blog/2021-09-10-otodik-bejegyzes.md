@@ -2,6 +2,7 @@
 published: true
 title: Otodik bejegyzes
 description: Igen ez már az ötödik, ezaz
+author: István
 tags:
   - lego
 date: 2021-09-10T12:49:09.016Z

@@ -35,8 +35,13 @@ function BlogRoll({ count }) {
                 <div className="card-body">
                   <h5 className="card-title">{title}</h5>
                   <p className="card-text">{post.frontmatter.date}</p>
+                  <p className="card-text">{post.frontmatter.author}</p>
                   <p className="card-text">{post.frontmatter.description}</p>
-                  <Link to={`/blog/${post.slug}`} isCurrent={true} className={"btn btn-primary"}>
+                  <Link
+                    to={`/blog/${post.slug}`}
+                    isCurrent={true}
+                    className={"btn btn-primary"}
+                  >
                     Olvasd tovább
                   </Link>
                 </div>
@@ -45,13 +50,11 @@ function BlogRoll({ count }) {
             </Col>
           )
         })}
-        {/* <Router>
+      {/* <Router>
           <Blog path="/" />
           <IndexPage path="/blog" />
         </Router> */}
     </Row>
-
-
   )
 }
 

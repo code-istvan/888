@@ -25,6 +25,7 @@ const blogPosts = ({ data }) => {
           <Col xs={10}>
             <h1>{frontmatter.title}</h1>
             <p>{frontmatter.date}</p>
+            <p>{frontmatter.author}</p>
             <img src={frontmatter.thumbnail} alt={frontmatter.title} />
             <article>
               <MDXRenderer>{body}</MDXRenderer>
@@ -51,6 +52,7 @@ export const query = graphql`
       frontmatter {
         title
         description
+        author
         date(formatString: "YYYY. MM. DD.")
         thumbnail
       }
