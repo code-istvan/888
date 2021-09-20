@@ -395,7 +395,7 @@ export default function Tamogatas() {
                           <option value="gafikus">Grafikus</option>
                           <option value="fordito">Angol fordító</option>
                           <option value="copywriter">Copywriter</option>
-                          <option value="palzayat">Pályázatíró</option>
+                          <option value="palyazat">Pályázatíró</option>
                           <option value="ugzintezo">Ügyintéző</option>
                           <option value="egyeb">Egyéb</option>
                           required
