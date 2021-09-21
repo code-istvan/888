@@ -7,7 +7,7 @@ import Col from "react-bootstrap/Col"
 import UvegzsebBevetel from "../components/UvegzsebBevetel"
 import UvegzsebKiadas from "../components/UvegzsebKiadas"
 
-export default function Üvegzseb({ data }) {
+export default function Üvegzseb() {
   return (
     <Layout>
       <Seo title="Üvegzseb" />

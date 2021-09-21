@@ -37,8 +37,9 @@ module.exports = {
     },
 
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     `gatsby-plugin-sitemap`,
-    "gatsby-plugin-robots-txt",
+    `gatsby-plugin-robots-txt`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,

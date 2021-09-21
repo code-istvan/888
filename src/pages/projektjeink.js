@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { Row, Col } from "react-bootstrap"
-import { graphql, Link } from "gatsby"
+import { Link } from "gatsby"
 import Container from "react-bootstrap/Container"
 import Button from "react-bootstrap/Button"
 import Accordion from "react-bootstrap/Accordion"
@@ -173,15 +173,3 @@ export default function Projektjeink() {
     </Layout>
   )
 }
-
-export const query = graphql`
-  query MyQuery {
-    file(relativePath: { eq: "Eddie_book.jpg" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`

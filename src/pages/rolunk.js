@@ -5,7 +5,7 @@ import { Row, Col } from "react-bootstrap"
 import Card from "react-bootstrap/Card"
 import ListGroup from "react-bootstrap/ListGroup"
 import Container from "react-bootstrap/Container"
-import { Link } from "gatsby"
+import { graphql, Link } from "gatsby"
 import "../sass/components/_rolunk.scss"
 import "../sass/components/card-hover.scss"
 
@@ -20,7 +20,7 @@ export default function Rolunk() {
             <p>
               Alapítványunk célja, hogy a jóga elméletét és gyakorlatát minél
               szélesebb körben népszerűsítse Magyarországon. Az Indiából
-              eredeztethető jóga már évezredek óta segíti az embereket a testi
+              eredeztethető jóga már évezredek óta segíti az embereket a testi
               és lelki egészség elérésében és megőrzésében. Áldásos hatásai ma
               már minden kétségen felül bizonyítottak, gyakorlóinak nem csupán
               fizikai kondícióját és általános egészségi állapotát javítja,
@@ -28,8 +28,8 @@ export default function Rolunk() {
               az élet többi területén is könnyen megállják a helyüket, boldogan
               és kiegyensúlyozottan éljenek. Technikái sikeresen beilleszthetők
               a mai, modern életvitelbe is. Számos kiváló könyvet írtak a
-              témában, amelyek jelentős része sajnos magyar nyelven egyelőre nem
-              hozzáférhető. Az Alapítvány a jóga gyakorlati és
+              témában, amelyek jelentős része sajnos magyar nyelven egyelőre nem
+              hozzáférhető. Az Alapítvány a jóga gyakorlati és
               elméleti-filozófiai ismeretanyaga népszerűsítésének célkitűzését
               és abban való szerepvállalását az alábbi tevékenységekkel, módokon
               és eszközökkel kívánja megvalósítani:
@@ -40,25 +40,25 @@ export default function Rolunk() {
           <Col>
             <p>
               <li>
-                a fő hangsúlyt a közvetlen, gyakorlati oktatásra helyezzük
+                a fő hangsúlyt a közvetlen, gyakorlati oktatásra helyezzük
                 rendezvények, workshopok és tematikus tréningek tartásával;
               </li>
               <li>
                 idegen nyelven megjelent szakirodalom fordítása és terjesztése;
               </li>
               <li>
-                a jóga gyakorlásával, vagy elméletével összefüggő eredeti
+                a jóga gyakorlásával, vagy elméletével összefüggő eredeti
                 szerzői művek létrehozásának és terjesztésének támogatása;
               </li>
               <li>
-                a jóga iránt érdeklődést és elkötelezettséget mutató, de anyagi
+                a jóga iránt érdeklődést és elkötelezettséget mutató, de anyagi
                 körülményeik miatt a gyakorlás elmélyítésére, vagy a
-                szakirodalom beszerzésére megfelelő lehetőségekkel nem bíró
+                szakirodalom beszerzésére megfelelő lehetőségekkel nem bíró
                 tanítványok segítése, számukra szisztematikus, ingyenes
                 jógaoktatási rendszer kiépítése;
               </li>
               <li>
-                konferenciák, előadások szervezése és megtartása neves hazai és
+                konferenciák, előadások szervezése és megtartása neves hazai és
                 külföldi szakemberek részvételével, egyéb eszmecserék tartása a
                 védikus kultúra és a jóga elméleti-filozófiai aspektusainak
                 megismertetésére, mely elősegíti a jógikus életmód kialakítását;
