@@ -6,7 +6,7 @@ author: István
 tags:
   - lego
 date: 2021-09-10T12:49:09.016Z
-thumbnail: /images/uploads/carson-arias-7z03r1wodmi-unsplash.jpg
+thumbnail: /blogpostimages/carson-arias-7z03r1wodmi-unsplash.jpg
 ---
 
 d3wddwdwd32

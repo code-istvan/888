@@ -6,7 +6,7 @@ author: István
 tags:
   - masodik
 date: 2021-09-07T13:49:42.937Z
-thumbnail: /images/uploads/blog.jpg
+thumbnail: /blogpostimages/blog.jpg
 ---
 
 dwedwedewwe
