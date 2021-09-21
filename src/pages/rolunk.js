@@ -19,18 +19,18 @@ export default function Rolunk() {
           <Col>
             <p>
               Alapítványunk célja, hogy a jóga elméletét és gyakorlatát minél
-              szélesebb körben népszerűsítse Magyarországon. Az Indiából
+              szélesebb körben népszerűsítse Magyarországon. Az Indiából
               eredeztethető jóga már évezredek óta segíti az embereket a testi
               és lelki egészség elérésében és megőrzésében. Áldásos hatásai ma
               már minden kétségen felül bizonyítottak, gyakorlóinak nem csupán
               fizikai kondícióját és általános egészségi állapotát javítja,
-              hanem egy komplex hatásmechanizmus révén segíti őket abban, hogy
+              hanem egy komplex hatásmechanizmus révén segíti őket abban, hogy
               az élet többi területén is könnyen megállják a helyüket, boldogan
               és kiegyensúlyozottan éljenek. Technikái sikeresen beilleszthetők
               a mai, modern életvitelbe is. Számos kiváló könyvet írtak a
               témában, amelyek jelentős része sajnos magyar nyelven egyelőre nem
               hozzáférhető. Az Alapítvány a jóga gyakorlati és
-              elméleti-filozófiai ismeretanyaga népszerűsítésének célkitűzését
+              elméleti-filozófiai ismeretanyaga népszerűsítésének célkitűzését
               és abban való szerepvállalását az alábbi tevékenységekkel, módokon
               és eszközökkel kívánja megvalósítani:
             </p>
@@ -48,7 +48,7 @@ export default function Rolunk() {
               </li>
               <li>
                 a jóga gyakorlásával, vagy elméletével összefüggő eredeti
-                szerzői művek létrehozásának és terjesztésének támogatása;
+                szerzői művek létrehozásának és terjesztésének támogatása;
               </li>
               <li>
                 a jóga iránt érdeklődést és elkötelezettséget mutató, de anyagi
@@ -61,13 +61,13 @@ export default function Rolunk() {
                 konferenciák, előadások szervezése és megtartása neves hazai és
                 külföldi szakemberek részvételével, egyéb eszmecserék tartása a
                 védikus kultúra és a jóga elméleti-filozófiai aspektusainak
-                megismertetésére, mely elősegíti a jógikus életmód kialakítását;
+                megismertetésére, mely elősegíti a jógikus életmód kialakítását;
               </li>
               <li>jóga szakkönyvtár létrehozása;</li>
               <li>
                 a jógikus életmód iránt érdeklődők számára rendszeres
-                összejövetelek, eszmecserék lehetőségének kialakítása klubszerű
-                működési formában;
+                összejövetelek, eszmecserék lehetőségének kialakítása klubszerű
+                működési formában;
               </li>
               <li>
                 ösztöndíjak, külföldi tréningek és/vagy tanulmányok támogatása,
