@@ -4,7 +4,7 @@ backend:
   branch: main
   site_domain: https://lucid-meninsky-96389d.netlify.app
 
-media_folder: "static/blogpostimages/"
+media_folder: "static/blogpostimages"
 public_folder: "/blogpostimages"
 slug:
   encoding: "ascii"
