@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   repo: code-istvan/888
   branch: main
-  site_domain: https://lucid-meninsky-96389d.netlify.app
+  site_domain: https://nyolcag.hu
 
 media_folder: "static/blogpostimages"
 public_folder: "/blogpostimages"
