@@ -17,7 +17,7 @@ export default function Kapcsolat() {
       </Row>
       <Row>
         <Col>
-          <p>Lépj velünk kapcsolatba:</p>
+          <p>Kérdésed, észrevételed van? Írj nekünk, hamarosan válaszolunk!</p>
         </Col>
       </Row>
       <form
