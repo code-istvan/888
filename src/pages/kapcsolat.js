@@ -17,7 +17,7 @@ export default function Kapcsolat() {
       </Row>
       <Row>
         <Col>
-          <p>Lépj velünk kapcsolatba</p>
+          <p>Lépj velünk kapcsolatba:</p>
         </Col>
       </Row>
       <form
@@ -46,6 +46,7 @@ export default function Kapcsolat() {
           </Col>
           <Col md={6}>
             <textarea
+              className="kapcsolat__textarea"
               name="comments"
               rows="2"
               placeholder="Üzenet"
