@@ -18,7 +18,7 @@ A jövőben a blog-on keresztül szeretnénk tartani veletek a kapcsolatot, mego
 
 Ha kérdésetek, észrevételetek van tevékenységünkkel kapcsolatban, írjatok bátran!
 
-Namasté,\
+Namasté,
 Nyolcág
 
 Fénykép: OM jel a falon Rishikesben
