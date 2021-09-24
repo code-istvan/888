@@ -11,7 +11,7 @@ import TagsIcon from "../components/TagsIcon"
 import Seo from "../components/seo"
 import { navigate } from "gatsby"
 import "../sass/components/_blogposts.scss"
-import { GatsbyImage, StaticImage, getImage, getSrc } from "gatsby-plugin-image"
+import { GatsbyImage, getImage, getSrc } from "gatsby-plugin-image"
 
 const blogPosts = ({ data }) => {
   const { frontmatter, body } = data.mdx

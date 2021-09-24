@@ -1,12 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
 import { Row, Col } from "react-bootstrap"
-import Image from "react-bootstrap/Image"
 import "../sass/components/card-hover.scss"
 import "../sass/components/_blog.scss"
 import "../sass/components/card-hover.scss"
 import { useBlogRoll } from "../hooks/useBlogRollQuery"
-import { GatsbyImage, StaticImage, getImage, getSrc } from "gatsby-plugin-image"
+import { GatsbyImage, getImage} from "gatsby-plugin-image"
 
 function BlogRoll({ count }) {
   var posts = []
@@ -24,7 +23,6 @@ function BlogRoll({ count }) {
       {posts &&
         posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
-          const src = getSrc(post.frontmatter.thumbnail)
           const image = getImage(post.frontmatter.thumbnail)
           
           return (
@@ -49,10 +47,6 @@ function BlogRoll({ count }) {
             </Col>
           )
         })}
-      {/* <Router>
-          <Blog path="/" />
-          <IndexPage path="/blog" />
-        </Router> */}
     </Row>
   )
 }

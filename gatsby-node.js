@@ -33,7 +33,6 @@ exports.createPages = ({ actions, graphql }) => {
         component: blogPostTemplate,
         context: {
           slug: post.fields.slug,
-          thumbnail: post.fields.thumbnail,
         },
       })
     })

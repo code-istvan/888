@@ -17,7 +17,7 @@ module.exports = {
         extensions: [`.mdx`, `.md`],
       },
     },
-    {
+    { //These are global values, also the default values, but they can be overwritten from the graphQL query
       resolve: `gatsby-plugin-sharp`,
       options: {
         defaults: {
