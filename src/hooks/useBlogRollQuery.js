@@ -12,7 +12,15 @@ export const useBlogRoll = () => {
               date(formatString: "YYYY. MM. DD.")
               description
               title
-              thumbnail
+              thumbnail {
+                childImageSharp {
+                  gatsbyImageData(
+                    width: 200
+                    placeholder: BLURRED
+                    formats: [AUTO, WEBP, AVIF]
+                  )
+                }
+              }
             }
           }
         }
