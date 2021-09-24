@@ -9,6 +9,7 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
+import { GatsbyImage, StaticImage, getImage, getSrc } from "gatsby-plugin-image"
 
 function Seo({ description, lang, meta, title, thumbnail, schemaMarkup }) {
   const { site } = useStaticQuery(

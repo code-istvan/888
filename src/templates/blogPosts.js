@@ -11,17 +11,20 @@ import TagsIcon from "../components/TagsIcon"
 import Seo from "../components/seo"
 import { navigate } from "gatsby"
 import "../sass/components/_blogposts.scss"
+import { GatsbyImage, StaticImage, getImage, getSrc } from "gatsby-plugin-image"
 
 const blogPosts = ({ data }) => {
   const { frontmatter, body } = data.mdx
-  const image = frontmatter.thumbnail || ""
+  const src = getSrc(frontmatter.thumbnail) || ""
+  const image = getImage(frontmatter.thumbnail)
+
   return (
     <Layout>
       <Container>
         <Seo
           title={frontmatter.title}
           description={frontmatter.description}
-          thumbnail={image}
+          thumbnail={src}
         />
         <Row>
           <Col></Col>
@@ -35,7 +38,7 @@ const blogPosts = ({ data }) => {
               <TagsIcon />
               <p>{frontmatter.tags}</p>
             </div>
-            <img src={frontmatter.thumbnail} alt={frontmatter.title} />
+            <GatsbyImage image={image} alt={frontmatter.title}/>
             <article>
               <MDXRenderer>{body}</MDXRenderer>
             </article>
@@ -64,7 +67,14 @@ export const query = graphql`
         author
         tags
         date(formatString: "YYYY. MM. DD.")
-        thumbnail
+        thumbnail {
+          childImageSharp {
+            gatsbyImageData(
+              placeholder: BLURRED
+              formats: [AUTO, WEBP, AVIF]
+            )
+          }
+        }
       }
     }
   }
