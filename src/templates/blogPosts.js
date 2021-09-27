@@ -38,7 +38,9 @@ const blogPosts = ({ data }) => {
               <TagsIcon />
               <p>{frontmatter.tags}</p>
             </div>
-            <GatsbyImage image={image} alt={frontmatter.title}/>
+            <GatsbyImage image={image} alt={frontmatter.title} />
+            <br />
+            <br />
             <article>
               <MDXRenderer>{body}</MDXRenderer>
             </article>
@@ -69,10 +71,7 @@ export const query = graphql`
         date(formatString: "YYYY. MM. DD.")
         thumbnail {
           childImageSharp {
-            gatsbyImageData(
-              placeholder: BLURRED
-              formats: [AUTO, WEBP, AVIF]
-            )
+            gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
           }
         }
       }
