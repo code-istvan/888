@@ -10,7 +10,6 @@ import { Link } from "gatsby"
 import MyPDF from "../pdfs/8ag_egyszazalek.pdf"
 import MyPDF2 from "../pdfs/8ag_szamlaszam.pdf"
 import Accordion from "react-bootstrap/Accordion"
-// import facebook from "..//images/facebook.svg"
 import "../sass/components/_tamogatas.scss"
 import "../sass/components/card-hover.scss"
 
@@ -110,7 +109,7 @@ export default function Tamogatas() {
                     Bővebben
                   </Accordion.Toggle>{" "}
                   <Accordion.Collapse eventKey="0">
-                    <p className="text_align_justify margin-top20">
+                    <p className="margin-top20">
                       <div className="alert alert-primary" role="alert">
                         Amennyiben szeretnéd, hogy a támogatás (adomány)
                         beérkezését követően a nevedet és a támogatás összegét,

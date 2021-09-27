@@ -44,7 +44,7 @@ const IndexPage = () => {
       <Container>
         <Row>
           <Col md>
-            <h1 align="left">Nyolcágú jóga alapítvány</h1>
+            <h1 align="left">Nyolcágú jóga alapítvány!</h1>
             <p className="index__text_background index__leadText" align="left">
               Alapítványunk célja, hogy a jóga elméletét és gyakorlatát minél
               szélesebb körben népszerűsítse Magyarországon. Az Indiából
