@@ -15,9 +15,11 @@ export const useBlogRoll = () => {
               thumbnail {
                 childImageSharp {
                   gatsbyImageData(
-                    width: 200
+                    width: 500
+                    height: 300
                     placeholder: BLURRED
                     formats: [AUTO, WEBP, AVIF]
+                    transformOptions: { cropFocus: CENTER }
                   )
                 }
               }

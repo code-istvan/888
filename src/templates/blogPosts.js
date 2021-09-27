@@ -4,7 +4,7 @@ import React from "react"
 import { Row, Col } from "react-bootstrap"
 import Container from "react-bootstrap/Container"
 import Button from "react-bootstrap/Button"
-import Layout from "../components/layout"
+import LayoutBlog from "../components/layoutBlog"
 import AuthorIcon from "../components/AuthorIcon"
 import DateIcon from "../components/DateIcon"
 import TagsIcon from "../components/TagsIcon"
@@ -19,7 +19,7 @@ const blogPosts = ({ data }) => {
   const image = getImage(frontmatter.thumbnail)
 
   return (
-    <Layout>
+    <LayoutBlog>
       <Container>
         <Seo
           title={frontmatter.title}
@@ -27,8 +27,8 @@ const blogPosts = ({ data }) => {
           thumbnail={src}
         />
         <Row>
-          <Col></Col>
-          <Col xs={10}>
+          {/* <Col xs={10}> */}
+          <Col md={{ span: 8, offset: 2 }}>
             <h1>{frontmatter.title}</h1>
             <div className="blogPosts__same-line">
               <AuthorIcon />
@@ -50,10 +50,9 @@ const blogPosts = ({ data }) => {
             </Button>
             <br /> <br />
           </Col>
-          <Col></Col>
         </Row>
       </Container>
-    </Layout>
+    </LayoutBlog>
   )
 }
 
@@ -71,7 +70,12 @@ export const query = graphql`
         date(formatString: "YYYY. MM. DD.")
         thumbnail {
           childImageSharp {
-            gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+            gatsbyImageData(
+              placeholder: BLURRED
+              blurredOptions: { width: 100 }
+              transformOptions: { cropFocus: CENTER }
+              formats: [AUTO, WEBP, AVIF]
+            )
           }
         }
       }
