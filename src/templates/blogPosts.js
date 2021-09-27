@@ -44,14 +44,6 @@ const blogPosts = ({ data }) => {
                 <p>{frontmatter.tags}</p>
               </Col>
             </Row>
-            {/* <div className="blogPosts__same-line">
-              <AuthorIcon />
-              <p>{frontmatter.author}</p>
-              <DateIcon />
-              <p>{frontmatter.date}</p>
-              <TagsIcon />
-              <p>{frontmatter.tags}</p>
-            </div> */}
             <GatsbyImage image={image} alt={frontmatter.title} />
             <br />
             <br />
