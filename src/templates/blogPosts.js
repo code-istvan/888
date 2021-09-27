@@ -27,17 +27,31 @@ const blogPosts = ({ data }) => {
           thumbnail={src}
         />
         <Row>
-          {/* <Col xs={10}> */}
           <Col md={{ span: 8, offset: 2 }}>
             <h1>{frontmatter.title}</h1>
-            <div className="blogPosts__same-line">
+            <Row xs="auto">
+              {" "}
+              <Col className="blogPosts__same-line">
+                <AuthorIcon />
+                <p>{frontmatter.author}</p>
+              </Col>
+              <Col className="blogPosts__same-line">
+                <DateIcon />
+                <p>{frontmatter.date}</p>
+              </Col>
+              <Col className="blogPosts__same-line">
+                <TagsIcon />
+                <p>{frontmatter.tags}</p>
+              </Col>
+            </Row>
+            {/* <div className="blogPosts__same-line">
               <AuthorIcon />
               <p>{frontmatter.author}</p>
               <DateIcon />
               <p>{frontmatter.date}</p>
               <TagsIcon />
               <p>{frontmatter.tags}</p>
-            </div>
+            </div> */}
             <GatsbyImage image={image} alt={frontmatter.title} />
             <br />
             <br />
