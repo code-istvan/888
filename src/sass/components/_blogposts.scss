@@ -23,8 +23,6 @@ p {
     margin-left: 0px !important;
     margin-right: 0px !important;
   }
-  display: inline-flex;
-  text-align: center;
 }
 
 ul {
@@ -33,6 +31,11 @@ ul {
 
 li {
   padding-right: 10px;
+  display: inline-flex;
+  align-items: center;
+  p {
+    margin-bottom: 0px;
+  }
 }
 
 .blogPost__backgrondColor {
