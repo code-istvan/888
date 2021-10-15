@@ -57,9 +57,9 @@ export default function UvegzsebBevetel() {
         </tr>
         <tr className="firstLineColor">
           <td>8</td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>2021.10.15</td>
+          <td>...</td>
+          <td>10.500.-</td>
         </tr>
         <tr className="secondLineColor">
           <td>9</td>
