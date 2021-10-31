@@ -21,9 +21,9 @@ export default function UvegzsebKiadas() {
         </tr>
         <tr className="firstLineColor">
           <td>2</td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>2021.10.29</td>
+          <td>Bírósági illeték</td>
+          <td>10.500.-</td>
         </tr>
         <tr className="secondLineColor">
           <td>3</td>
