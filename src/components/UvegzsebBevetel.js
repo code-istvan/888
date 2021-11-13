@@ -58,7 +58,7 @@ export default function UvegzsebBevetel() {
         <tr className="firstLineColor">
           <td>8</td>
           <td>2021.10.15</td>
-          <td>Dr. Kővári Zsuzsanna</td>
+          <td>Dr. Kővári Zsuzsa</td>
           <td>10.500.-</td>
         </tr>
         <tr className="secondLineColor">
