@@ -29,7 +29,7 @@ export default function UvegzsebKiadas() {
           <td>3</td>
           <td>2021.11.16</td>
           <td>Jogdíj bankköltség térítés</td>
-          <td>5.900</td>
+          <td>5.900.-</td>
         </tr>
         <tr className="firstLineColor">
           <td>4</td>
