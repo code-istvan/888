@@ -63,9 +63,9 @@ export default function UvegzsebBevetel() {
         </tr>
         <tr className="secondLineColor">
           <td>9</td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>2021.11.15</td>
+          <td>Bimba András Imre</td>
+          <td>10.000.-</td>
         </tr>
         <tr className="firstLineColor">
           <td>10</td>
