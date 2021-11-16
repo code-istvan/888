@@ -69,11 +69,23 @@ export default function UvegzsebBevetel() {
         </tr>
         <tr className="firstLineColor">
           <td>10</td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>2021.11.16</td>
+          <td>Krébesz Andrea</td>
+          <td>3.000.-</td>
         </tr>
       </tbody>
+      <tr className="firstLineColor">
+        <td>11</td>
+        <td>2021.11.16</td>
+        <td>Szalai István</td>
+        <td>3.000.-</td>
+      </tr>
+      <tr className="firstLineColor">
+        <td>12</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
     </Table>
   )
 }
