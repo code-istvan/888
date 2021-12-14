@@ -80,6 +80,15 @@
     color: color(black, pure) !important;
     font-family: monospace;
   }
+  .navbar-nav {
+  margin-top: 60px;
+  }
+
+  .navbar-nav a {
+  padding-bottom: 10px;
+  }
+
+
 }
 
 .navbar-toggler {
@@ -103,6 +112,7 @@
 .navbar-nav a {
   margin-right: 15px;
   text-decoration: none;
+  font-size: x-large;
 }
 
 .navbar-nav {
