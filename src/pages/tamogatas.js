@@ -98,11 +98,11 @@ export default function Tamogatas() {
           <Col>
             <div class="card">
               <div class="card-body">
-                <h4 class="card-title">Projektámogatás</h4>
+                <h4 class="card-title">Projekttámogatás</h4>
                 <p class="card-text">
                   Ha valamelyik <Link href="/projektjeink">projektünket</Link>{" "}
-                  szeretnéd támogatni az alábbi finanszírozási lehetőségek közűl
-                  válaszhatsz.
+                  szeretnéd támogatni az alábbi finanszírozási lehetőségek közül
+                  választhatsz.
                 </p>
                 <Accordion>
                   <Accordion.Toggle as={Button} variant="primary" eventKey="0">
@@ -342,7 +342,7 @@ export default function Tamogatas() {
               <div class="card-body">
                 <h4 class="card-title">Jelentkezz önkéntesnek!</h4>
                 <p class="card-text">
-                  Az jóga már évezredek óta segíti az embereket a testi és lelki
+                  A jóga már évezredek óta segíti az embereket a testi és lelki
                   egészség elérésében és megőrzésében. Önkéntesként te is
                   részese lehetsz eme nagyszerű folyamat széles körű
                   népszerűsítésében.
@@ -438,7 +438,7 @@ export default function Tamogatas() {
                 A Nyolcágú Jóga Alapítvány a bizalom és átláthatóság céljából
                 létrehozta az üvegzseb oldalt. Projektjeink, működésünk{" "}
                 <a href="/uvegzseb" class="alert-link">
-                  cashfloja itt tekinthető
+                  cash flow-ja itt tekinthető
                 </a>{" "}
                 meg.
               </p>
