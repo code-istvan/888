@@ -1,7 +1,7 @@
 ---
 published: true
 title: Egy százalék
-description: Sikeres NAV regisztráció adó 1% igényléséhez
+description: Sikeres NAV regisztráció
 author: István
 tags:
   - egyszázalék
