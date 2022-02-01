@@ -9,6 +9,20 @@ module.exports = {
     },
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        // You can add multiple tracking ids and a pageview event will be fired for all of them.
+        trackingIds: [
+          "G-9GXRMXW5E2", // Google Analytics / GA
+        ],
+        // This object is used for configuration specific to this plugin
+        pluginConfig: {
+          // Puts tracking script in the head instead of the body
+          head: true,
+        },
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     {
@@ -17,7 +31,8 @@ module.exports = {
         extensions: [`.mdx`, `.md`],
       },
     },
-    { //These are global values, also the default values, but they can be overwritten from the graphQL query
+    {
+      //These are global values, also the default values, but they can be overwritten from the graphQL query
       resolve: `gatsby-plugin-sharp`,
       options: {
         defaults: {
@@ -53,10 +68,10 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: "gatsby-source-filesystem",
       options: {
         path: `${__dirname}/src/images`,
-        name: 'images',
+        name: "images",
       },
     },
     `gatsby-plugin-sitemap`,
@@ -83,13 +98,13 @@ module.exports = {
         // Plugins configs
         plugins: [
           {
-            resolve: 'gatsby-remark-relative-images',
+            resolve: "gatsby-remark-relative-images",
             options: {
-              name: 'blogpostimages',
+              name: "blogpostimages",
             },
           },
           {
-            resolve: 'gatsby-remark-images',
+            resolve: "gatsby-remark-images",
             options: {
               // It's important to specify the maxWidth (in pixels) of
               // the content container as this plugin uses this as the
@@ -98,9 +113,9 @@ module.exports = {
             },
           },
           {
-            resolve: 'gatsby-remark-copy-linked-files',
+            resolve: "gatsby-remark-copy-linked-files",
             options: {
-              staticFolderName: 'blogpostimages',
+              staticFolderName: "blogpostimages",
             },
           },
         ],
