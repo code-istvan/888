@@ -79,5 +79,8 @@
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "optionalDependencies": {
+    "fsevents": "^2.3.2"
   }
 }
