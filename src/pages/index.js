@@ -63,7 +63,7 @@ const IndexPage = () => {
         <br />
         <Row>
           <Col>
-            <h3 align="left">ADÓ 1% felajánlása 2021. évre</h3>
+            <h3 align="left">Adó 1% felajánlása 2021. évre</h3>
           </Col>
         </Row>
         <br />
@@ -78,7 +78,7 @@ const IndexPage = () => {
         </Row>
         <br />
         <Link className="btn btn-primary __button-color" to="/tamogatas">
-          ADÓ 1% felajánlása bővebben
+          Adó 1% felajánlása bővebben
         </Link>
         <br />
         <br />
