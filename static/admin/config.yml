@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
   repo: code-istvan/888
-  branch: main
+  branch: master
   site_domain: https://nyolcag.hu
 
 media_folder: "static/blogpostimages"
