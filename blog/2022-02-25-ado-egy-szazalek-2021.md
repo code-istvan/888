@@ -1,7 +1,7 @@
 ---
 published: true
 title: ADÓ 1% felajánlása 2021. évre
-description: ADÓ 1% felajánlása 2021. évre
+description: "Azon munkálkodunk, hogy népszerűsítsük az astanga jóga hagyományát "
 author: Ancsa
 tags:
   - egyszázalék
