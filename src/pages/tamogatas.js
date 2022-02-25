@@ -43,6 +43,16 @@ export default function Tamogatas() {
                   <Accordion.Toggle as={Button} variant="primary" eventKey="0">
                     Bővebben
                   </Accordion.Toggle>{" "}
+                  {"  "}
+                  <Button
+                    variant="outline-primary"
+                    href="https://eszja.nav.gov.hu/app/login/#login"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="eszja--button"
+                  >
+                    Lépj be az ESZJA oldalára
+                  </Button>
                   <Accordion.Collapse eventKey="0">
                     <p className="text_align_justify margin-top20">
                       {" "}
@@ -80,6 +90,16 @@ export default function Tamogatas() {
                             rel="noopener noreferrer"
                           >
                             Adatok letöltése .pdf-be
+                          </Button>
+                          {"  "}
+                          <Button
+                            variant="outline-primary"
+                            href="https://eszja.nav.gov.hu/app/login/#login"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="eszja--button"
+                          >
+                            Lépj be az ESZJA oldalára
                           </Button>
                         </Card.Body>
                         <Card.Footer className="text-muted">
