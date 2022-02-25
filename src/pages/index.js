@@ -71,8 +71,8 @@ const IndexPage = () => {
           <Col>
             <p className="index__text_background index__leadText" align="left">
               Amennyiben szimpatikus számodra tevékenységünk és szeretnéd
-              támogatni munkánk, a jóga magyarországi népszerűsítését, ajánld
-              fel adód 1%-át alapítványunk részére.
+              támogatni munkánk, az astanga jóga magyarországi népszerűsítését,
+              ajánld fel adód 1%-át alapítványunk részére.
             </p>{" "}
           </Col>
         </Row>
