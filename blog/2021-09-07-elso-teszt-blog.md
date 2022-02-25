@@ -1,12 +1,19 @@
 ---
 published: true
-title: Elso teszt blog
-description: Ez az első teszt blog
-author: István
+title: ADÓ 1% felajánlása 2021. évre
+description: ADÓ 1% felajánlása 2021. évre
+author: Ancsa
 tags:
-  - teszt
-date: 2021-09-07T13:22:27.204Z
-thumbnail: /blogpostimages/no_coffe_no_prana_bw.jpg
+  - egyszázalék
+date: 2022-02-25T11:26:40.924Z
+thumbnail: /blogpostimages/egyszazalal.jpg
 ---
+Ez a dokumentum abban segit, hogyan teheted meg adód 1%-ának felajánlását a Nyolcágú Jóga Alapítvány számára. 
 
-dwedffrfewfwefewfewfewew
+ A felajánlást a NAV felületen teheted meg az alábbi linken: <https://eszja.nav.gov.hu/app/login/#login>\
+\
+Alábbi lépések segítenek eligazodni az oldalon való navigációban. 
+
+1. A fentebbi link az alábbi oldalra vezet, ahol a “BELÉPÉS” gombra kattintva juthasz tovább
+
+   ![ESZJA belépési oldal](/blogpostimages/szja1.png "ESZJA belépési oldal")
