@@ -20,6 +20,6 @@ Alábbi lépések segítenek eligazodni az oldalon való navigációban. 
 4. esetben kell kitölteni, ha hozzá kíván járulni az adatok átadásához. A hozzájárulás nem feltétele az érvényes rendelkezésnek.
 5. Rendelkezés Civil kedvezményezett részére – itt adható meg a Jógaalaptivány adószáma. Ha a szám helyesen van beirva a kedvezményezett neve automatikusan kitöltődik. **Adószám: 18734373-1-41.**
 6. Rendelkezés technikai számos kedvezményezett részére – opcionálisan kitölthető. A rendelkezés beküldéséhez legalább egyik 1%-ról rendelkezni kell.
-7. Kitöltés ellenőrzése -- ha nincs javítandó rész, akkor “TOVÁBB a BEADÁSHOZ”.
+7. Kitöltés ellenőrzése, ha nincs javítandó rész, akkor “TOVÁBB a BEADÁSHOZ”.
 8. Sikeres beküldés esetén a következő üzenetet kell, hogy kapjad.
 9. Nyiltkozatodat barmikor visszanézheted ügyfélkapudon keresztül.
