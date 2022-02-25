@@ -10,6 +10,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import BlogRoll from "../components/BlogRoll"
 import ActiveProjectOne from "../components/ActiveProjectOne"
 import ActiveProjectTwo from "../components/ActiveProjectTwo"
+import { Link } from "gatsby"
 // import { navigate } from "gatsby"
 // import { StaticImage } from "gatsby-plugin-image"
 
@@ -62,6 +63,27 @@ const IndexPage = () => {
         <br />
         <Row>
           <Col>
+            <h3 align="left">ADÓ 1% felajánlása 2021. évre</h3>
+          </Col>
+        </Row>
+        <br />
+        <Row>
+          <Col>
+            <p className="index__text_background index__leadText" align="left">
+              Amennyiben szimpatikus számodra tevékenységünk és szeretnéd
+              támogatni munkánk, a jóga magyarországi népszerűsítését, ajánld
+              fel adód 1%-át alapítványunk részére.
+            </p>{" "}
+          </Col>
+        </Row>
+        <br />
+        <Link className="btn btn-primary __button-color" to="/tamogatas">
+          ADÓ 1% felajánlása bővebben
+        </Link>
+        <br />
+        <br />
+        <Row>
+          <Col>
             <h3 align="left">Aktív projektjeink</h3>
           </Col>
         </Row>
@@ -74,7 +96,6 @@ const IndexPage = () => {
             <ActiveProjectTwo />
           </Col>
         </Row>
-
         <br />
         <br />
         <Row>
