@@ -13,6 +13,6 @@ TESZT
 
 
 
-1. Egy
-2. Kettő
-3. Három
+1. uzu
+2. hjijl
+3. ijijli
