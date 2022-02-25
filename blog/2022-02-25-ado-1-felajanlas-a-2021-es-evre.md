@@ -9,6 +9,8 @@ tags:
 date: 2022-02-25T23:06:25.714Z
 thumbnail: /blogpostimages/egyszazalal.jpg
 ---
+TESZT
+
 1. A fentebbi link az alábbi oldalra vezet, ahol a “BELÉPÉS” gombra kattintva juthasz tovább.
 2. Azonosítás az Ügyfélkapun keresztül ajánlott.
 3. Ügyfélkapu azonosítás után (Felhasznaló név + jelszó) után “1+1%-os nyilatkozat megtekintése” gombra kattintva lehet tovább haladni.
