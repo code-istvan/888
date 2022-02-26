@@ -48,3 +48,9 @@ li {
   border-radius: 3px;
   border-bottom: 3px solid color(gray);
 }
+
+article {
+  li {
+    display: list-item;
+  }
+}
