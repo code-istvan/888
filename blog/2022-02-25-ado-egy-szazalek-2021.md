@@ -15,11 +15,11 @@ A felajánlást a NAV felületen teheted meg az alábbi linken: https://eszja.na
 
 Alábbi lépések segítenek eligazodni az oldalon való navigációban.
 
-1. A fentebbi link az alábbi oldalra vezet, ahol a “BELÉPÉS” gombra kattintva juthasz tovább.
+1. A fentebbi link az alábbi oldalra vezet, ahol a **“BELÉPÉS”** gombra kattintva juthasz tovább.
    ![eszja oldala](http://bandha.works/nyolcag/blogpostimages/egyszazalek/szja1.png "ESZJA oldala")
 2. Azonosítás az Ügyfélkapun keresztül ajánlott.
    ![ügyfélkapus azonosítás](http://bandha.works/nyolcag/blogpostimages/egyszazalek/szja2.png "ügyfélkapus azonosítás")
-3. Ügyfélkapu azonosítás után (Felhasznaló név + jelszó) után “1+1%-os nyilatkozat megtekintése” gombra kattintva lehet tovább haladni.
+3. Ügyfélkapu azonosítás után (Felhasznaló név + jelszó) után **“1+1%-os nyilatkozat megtekintése”** gombra kattintva lehet tovább haladni.
    ![eszja nyitókép](http://bandha.works/nyolcag/blogpostimages/egyszazalek/szja3.png "eszja nyitókép")
 4. Adóazonositó jel megadása **kötelező**, cím adatok megadása **önkéntes** - A név és címadatokat csak abban az esetben kell kitölteni, ha hozzá kíván járulni az adatok átadásához. A hozzájárulás nem feltétele az érvényes rendelkezésnek.
    ![adatok megadása](http://bandha.works/nyolcag/blogpostimages/egyszazalek/szja4.png "adatok megadása")
@@ -27,7 +27,7 @@ Alábbi lépések segítenek eligazodni az oldalon való navigációban.
    ![adószám megadása](http://bandha.works/nyolcag/blogpostimages/egyszazalek/szja5.png "adószám megadása")
 6. Rendelkezés technikai számos kedvezményezett részére – opcionálisan kitölthető. A rendelkezés beküldéséhez legalább egyik 1%-ról rendelkezni kell.
    ![rendelkezés technikai számos](http://bandha.works/nyolcag/blogpostimages/egyszazalek/szja6.png "rendelkezés technikai számos")
-7. Kitöltés ellenőrzése, ha nincs javítandó rész, akkor “TOVÁBB a BEADÁSHOZ”.
+7. Kitöltés ellenőrzése, ha nincs javítandó rész, akkor **“TOVÁBB a BEADÁSHOZ”**.
    ![ellenőrzés](http://bandha.works/nyolcag/blogpostimages/egyszazalek/szja7.png "ellenőrzés")
 8. Sikeres beküldés esetén a következő üzenetet kell hogy kapjad.
    ![sikeres beküldés](http://bandha.works/nyolcag/blogpostimages/egyszazalek/szja8.png "sikeres beküldés")
