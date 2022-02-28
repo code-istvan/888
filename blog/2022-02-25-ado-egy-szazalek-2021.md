@@ -1,7 +1,8 @@
 ---
 published: true
 title: Adó 1% felajánlása 2021. évre
-description: "Azon munkálkodunk, hogy népszerűsítsük Magyarországon az astanga jóga hagyományát "
+description: "Azon munkálkodunk, hogy népszerűsítsük Magyarországon az astanga
+  jóga hagyományát "
 author: Ancsa
 tags:
   - egyszázalék
@@ -15,7 +16,7 @@ A felajánlást a NAV felületen teheted meg az alábbi linken: https://eszja.na
 
 Alábbi lépések segítenek eligazodni az oldalon való navigációban.
 
-1. A fentebbi link az alábbi oldalra vezet, ahol a **“BELÉPÉS”** gombra kattintva juthasz tovább.
+1. A fentebbi link az alábbi oldalra vezet, ahol a **“BELÉPÉS”** gombra kattintva juthasz tovább. [Kép](http://bandha.works/nyolcag/blogpostimages/egyszazalek/szja1.png)
    ![eszja oldala](http://bandha.works/nyolcag/blogpostimages/egyszazalek/szja1.png "ESZJA oldala")
 2. Azonosítás az Ügyfélkapun keresztül ajánlott.
    ![ügyfélkapus azonosítás](http://bandha.works/nyolcag/blogpostimages/egyszazalek/szja2.png "ügyfélkapus azonosítás")
