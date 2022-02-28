@@ -27,7 +27,7 @@ A felajánlást a NAV felületen teheted meg az alábbi linken: https://eszja.na
 Az alábbi lépések segítenek eligazodni az oldalon való navigációban:
 
 1. A fentebbi link az alábbi oldalra vezet, ahol a **“BELÉPÉS”** gombra kattintva juthasz tovább. [Kép](http://bandha.works/nyolcag/blogpostimages/egyszazalek/szja1.png)
-2. Azonosítás az Ügyfélkapun keresztül ajánlott.[Kép] (http://bandha.works/nyolcag/blogpostimages/egyszazalek/szja2.png)
+2. Azonosítás az Ügyfélkapun keresztül ajánlott. [Kép] (http://bandha.works/nyolcag/blogpostimages/egyszazalek/szja2.png)
 3. Ügyfélkapu azonosítás után (Felhasznaló név + jelszó) után **“1+1%-os nyilatkozat megtekintése”** gombra kattintva lehet tovább haladni.[Kép](http://bandha.works/nyolcag/blogpostimages/egyszazalek/szja3.png)
 4. Adóazonositó jel megadása **kötelező**, cím adatok megadása **önkéntes** - A név és címadatokat csak abban az esetben kell kitölteni, ha hozzá kíván járulni az adatok átadásához. A hozzájárulás nem feltétele az érvényes rendelkezésnek.[Kép](http://bandha.works/nyolcag/blogpostimages/egyszazalek/szja4.png)
 5. Rendelkezés Civil kedvezményezett részére – itt adható meg a Jógaalaptivány adószáma. Ha a szám helyesen van beirva a kedvezményezett neve automatikusan kitöltődik. **Adószám: 18734373-1-41.** [Kép](http://bandha.works/nyolcag/blogpostimages/egyszazalek/szja5.png)
