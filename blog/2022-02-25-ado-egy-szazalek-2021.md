@@ -41,6 +41,6 @@ Az alábbi lépések segítenek eligazodni az oldalon való navigációban:
 
 Amennyiben másoknak is ajánlanád alapítványunkat, azért extra hála!
 
-Minden felajánlást hálásan köszönünk :fire: :sun_with_face: :pray:
+Minden felajánlást hálásan köszönünk!
 
 Nyolcágú Jóga Alapítvány Csapata
