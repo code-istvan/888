@@ -14,12 +14,12 @@ Kedves Jógás Barátunk!
 
 Ismét eltelt egy év, itt az adóbevallási időszak.
 
-A Bandha Works Csapata, a reggeli Mysore programon túl is - alapítványunkon keresztűl - azon munkálkodik, hogy népszerűsítse az astanga jóga hagyományát.
+A Bandha Works Csapata, a reggeli Mysore programon túl is - alapítványunkon keresztűl - azon munkálkodik, hogy népszerűsítse Magyarországon az astanga jóga hagyományát.
 
 Aktuális projektjeink:
 https://nyolcag.hu/projektjeink
 
-Amennyiben szimpatikus számodra a küldetésünk és szeretnéd támogatni “háttérmunkánk”, az astanga jóga magyarországi népszerűsítését, ajánld fel adód 1%-át a Nyolcágú Jóga Alapítvány részére.
+Amennyiben szimpatikus számodra a küldetésünk és szeretnéd támogatni munkánk, ajánld fel adód 1%-át a Nyolcágú Jóga Alapítvány részére.
 
 A következő leírás abban segit, hogyan teheted meg adód 1%-ának felajánlását a Nyolcágú Jóga Alapítvány számára.
 
