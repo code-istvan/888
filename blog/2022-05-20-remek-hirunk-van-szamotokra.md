@@ -22,6 +22,6 @@ A könyv megvásárolható a Bandha Works Jógaiskola <a href="https://bandha-pa
 
 Hálás köszönet mindazoknak aki ebben a nagyszerű projektben a segítségünkre voltak: <a href="https://www.zoltanbank.com/" target="_blank">Bánk Zoltán</a>, Baranyai Dalma, Barna Kisanna, Csák Csaba, <a href="https://www.diadacsev.com/about" target="_blank">Dacsev Dia</a>, Dózsa Zoltán, Dr. Kővári Zsuzsa, Dr. Németh György, Dr. Szabó Gergely, Krébesz Andrea, Magos Eszter.
 
-Namasté,\
-István\
+Namasté,
+István
 Nyolcágú Jóga Alapítvány
