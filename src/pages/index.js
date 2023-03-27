@@ -63,7 +63,7 @@ const IndexPage = () => {
         <br />
         <Row>
           <Col>
-            <h3 align="left">Adó 1% felajánlása 2021. évre</h3>
+            <h3 align="left">Adó 1% felajánlása 2022. évre</h3>
           </Col>
         </Row>
         <br />
